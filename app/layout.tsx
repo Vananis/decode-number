@@ -29,7 +29,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* TODO: Add Google Analytics and Search Console verification after setup */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NKLT6GH13Z"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NKLT6GH13Z');
+          `}
+        </Script>
       </head>
       <body className={`${inter.variable} ${cinzel.variable} font-sans antialiased`}>
         {children}
