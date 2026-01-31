@@ -8,14 +8,14 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return getAllSlugs("en", "birthstone").map((slug) => ({ slug }));
+  return getAllSlugs("en", "birth-stone").map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   try {
-    const content = await readMarkdownFile(slug, "en", "birthstone");
-    const alternates = getAlternateLanguages(slug, "birthstone");
+    const content = await readMarkdownFile(slug, "en", "birth-stone");
+    const alternates = getAlternateLanguages(slug, "birth-stone");
     
     return {
       title: content.frontmatter.title || `${slug.charAt(0).toUpperCase() + slug.slice(1)} Birthstone`,
@@ -36,7 +36,7 @@ export default async function BirthstonePage({ params }: Props) {
   
   let content;
   try {
-    content = await readMarkdownFile(slug, "en", "birthstone");
+    content = await readMarkdownFile(slug, "en", "birth-stone");
   } catch {
     notFound();
   }

@@ -1,8 +1,11 @@
 import { MetadataRoute } from "next";
-import { getAllAngelNumberSlugs } from "@/lib/markdown";
+import { getAllSlugs } from "@/lib/markdown";
 
 type Locale = "en" | "es" | "ja" | "ko" | "zh-hant";
+type ContentType = "number" | "birth-flower" | "birth-stone" | "zodiac";
+
 const locales: Locale[] = ["en", "es", "ja", "ko", "zh-hant"];
+const contentTypes: ContentType[] = ["number", "birth-flower", "birth-stone", "zodiac"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://decode-number.com";
@@ -23,15 +26,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const dreamPages = locales.flatMap((locale) => {
-    const slugs = getAllAngelNumberSlugs(locale);
-    return slugs.map((slug) => ({
-      url: `${baseUrl}/${locale}/angel-numbers/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    }));
-  });
+  const contentPages = locales.flatMap((locale) =>
+    contentTypes.flatMap((contentType) => {
+      const slugs = getAllSlugs(locale, contentType);
+      return slugs.map((slug) => ({
+        url: `${baseUrl}/${locale}/${contentType}/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: contentType === "number" ? 0.8 : 0.7,
+      }));
+    })
+  );
 
   return [
     {
@@ -42,6 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...homePages,
     ...legalPages,
-    ...dreamPages,
+    ...contentPages,
   ];
 }

@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 
 type Locale = 'en' | 'es' | 'ja' | 'ko' | 'zh-hant';
-type ContentType = 'number' | 'birth-flower' | 'birthstone' | 'zodiac';
+type ContentType = 'number' | 'birth-flower' | 'birth-stone' | 'zodiac';
 
 function getContentDir(locale: Locale, contentType: ContentType = 'number'): string {
   return path.join(process.cwd(), 'content', locale, contentType);
