@@ -1,0 +1,92 @@
+import Link from "next/link";
+import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+
+const popularSlugs = [
+  "teeth-falling-out", "being-chased", "falling", "flying", "snake", "water",
+  "death", "being-naked", "being-lost", "pregnancy", "spiders", "ex-partner"
+];
+
+export default async function SpanishHome() {
+  const allSlugs = getAllAngelNumberSlugs("es");
+  
+  const sortedSlugs = [
+    ...popularSlugs.filter(s => allSlugs.includes(s)),
+    ...allSlugs.filter(s => !popularSlugs.includes(s)).sort()
+  ];
+
+  const topDreams = await Promise.all(
+    sortedSlugs.slice(0, 12).map(async (slug) => {
+      const { frontmatter } = await readMarkdownFile(slug, "es");
+      return {
+        slug,
+        title: frontmatter.title || slug,
+        desc: frontmatter.description ? frontmatter.description.slice(0, 80) + "..." : ""
+      };
+    })
+  );
+
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
+      <div className="max-w-5xl mx-auto px-4 py-16">
+        <header className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Guía de Interpretación de Sueños
+          </h1>
+          <p className="text-xl text-gray-600">
+            Descubre el significado de tus sueños
+          </p>
+        </header>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Significados de Sueños Populares
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {topDreams.map((dream) => (
+              <Link
+                key={dream.slug}
+                href={`/es/dreams/${dream.slug}`}
+                className="block p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-indigo-200 transition-all"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {dream.title.replace(/:.*/g, "")}
+                </h3>
+                <p className="text-gray-600 text-sm line-clamp-2">{dream.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Todos los Símbolos ({allSlugs.length})
+          </h2>
+          <div className="flex flex-wrap justify-center gap-2">
+            {sortedSlugs.map((slug) => (
+              <Link
+                key={slug}
+                href={`/es/dreams/${slug}`}
+                className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-700 transition-colors"
+              >
+                {slug.replace(/-/g, " ")}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <Link
+          href="https://read-tarot.com"
+          className="block p-8 rounded-2xl text-center bg-gradient-to-r from-amber-100 via-orange-100 to-rose-100 hover:from-amber-200 hover:via-orange-200 hover:to-rose-200 transition-all shadow-sm hover:shadow-md"
+        >
+          <span className="text-3xl mb-2 block">✨</span>
+          <span className="text-2xl font-serif font-semibold text-gray-800 tracking-wide">
+            Saca Mis Cartas
+          </span>
+          <p className="text-gray-600 mt-2 text-sm">
+            Descubre lo que el tarot revela sobre tu camino
+          </p>
+        </Link>
+      </div>
+    </main>
+  );
+}
