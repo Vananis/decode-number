@@ -4,21 +4,27 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 
 type Locale = 'en' | 'es' | 'ja' | 'ko' | 'zh-hant';
+type ContentType = 'number' | 'birth-flower' | 'birthstone' | 'zodiac';
 
-function getContentDir(locale: Locale): string {
-  return path.join(process.cwd(), 'content', locale);
+function getContentDir(locale: Locale, contentType: ContentType = 'number'): string {
+  return path.join(process.cwd(), 'content', locale, contentType);
 }
 
-export function getAllAngelNumberSlugs(locale: Locale = 'en'): string[] {
-  const contentDir = getContentDir(locale);
+export function getAllSlugs(locale: Locale = 'en', contentType: ContentType = 'number'): string[] {
+  const contentDir = getContentDir(locale, contentType);
   if (!fs.existsSync(contentDir)) return [];
   return fs.readdirSync(contentDir)
     .filter(file => file.endsWith('.md'))
     .map(file => file.replace('.md', ''));
 }
 
-export async function readMarkdownFile(slug: string, locale: Locale = 'en') {
-  const contentDir = getContentDir(locale);
+// Backward compatibility
+export function getAllAngelNumberSlugs(locale: Locale = 'en'): string[] {
+  return getAllSlugs(locale, 'number');
+}
+
+export async function readMarkdownFile(slug: string, locale: Locale = 'en', contentType: ContentType = 'number') {
+  const contentDir = getContentDir(locale, contentType);
   const filePath = path.join(contentDir, `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContent);
@@ -35,15 +41,15 @@ export async function readMarkdownFile(slug: string, locale: Locale = 'en') {
   };
 }
 
-export function getAlternateLanguages(slug: string): { locale: Locale; url: string }[] {
+export function getAlternateLanguages(slug: string, contentType: ContentType = 'number'): { locale: Locale; url: string }[] {
   const locales: Locale[] = ['en', 'es', 'ja', 'ko', 'zh-hant'];
   const alternates: { locale: Locale; url: string }[] = [];
   
   for (const locale of locales) {
-    const contentDir = getContentDir(locale);
+    const contentDir = getContentDir(locale, contentType);
     const filePath = path.join(contentDir, `${slug}.md`);
     if (fs.existsSync(filePath)) {
-      alternates.push({ locale, url: `/${locale}/angel-numbers/${slug}` });
+      alternates.push({ locale, url: `/${locale}/${contentType}/${slug}` });
     }
   }
   
