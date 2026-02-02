@@ -86,6 +86,15 @@ export default async function KoreanHome() {
             타로가 당신의 길을 비춰드려요
           </p>
         </Link>
+        {/* Footer */}
+        <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
+          <p>© 2026 Decode Number</p>
+          <div className="flex justify-center gap-4 text-xs">
+            <Link href="/ko/privacy" className="hover:text-gray-600 transition-colors">개인정보처리방침</Link>
+            <span>|</span>
+            <Link href="/ko/terms" className="hover:text-gray-600 transition-colors">이용약관</Link>
+          </div>
+        </footer>
       </div>
     </main>
   );

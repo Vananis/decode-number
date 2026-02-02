@@ -86,6 +86,15 @@ export default async function ChineseTraditionalHome() {
             讓塔羅為您指引方向
           </p>
         </Link>
+        {/* Footer */}
+        <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
+          <p>© 2026 Decode Number</p>
+          <div className="flex justify-center gap-4 text-xs">
+            <Link href="/zh-hant/privacy" className="hover:text-gray-600 transition-colors">隱私權政策</Link>
+            <span>|</span>
+            <Link href="/zh-hant/terms" className="hover:text-gray-600 transition-colors">服務條款</Link>
+          </div>
+        </footer>
       </div>
     </main>
   );

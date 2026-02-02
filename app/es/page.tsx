@@ -86,6 +86,15 @@ export default async function SpanishHome() {
             Descubre lo que el tarot revela sobre tu camino
           </p>
         </Link>
+        {/* Footer */}
+        <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
+          <p>© 2026 Decode Number</p>
+          <div className="flex justify-center gap-4 text-xs">
+            <Link href="/es/privacy" className="hover:text-gray-600 transition-colors">Política de Privacidad</Link>
+            <span>|</span>
+            <Link href="/es/terms" className="hover:text-gray-600 transition-colors">Términos de Servicio</Link>
+          </div>
+        </footer>
       </div>
     </main>
   );

@@ -86,6 +86,15 @@ export default async function JapaneseHome() {
             タロットがあなたの道を照らします
           </p>
         </Link>
+        {/* Footer */}
+        <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
+          <p>© 2026 Decode Number</p>
+          <div className="flex justify-center gap-4 text-xs">
+            <Link href="/ja/privacy" className="hover:text-gray-600 transition-colors">プライバシーポリシー</Link>
+            <span>|</span>
+            <Link href="/ja/terms" className="hover:text-gray-600 transition-colors">利用規約</Link>
+          </div>
+        </footer>
       </div>
     </main>
   );
