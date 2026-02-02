@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tell-dream.com/sitemap.xml
+Sitemap: https://decode-number.com/sitemap.xml
