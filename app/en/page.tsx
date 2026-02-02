@@ -93,6 +93,15 @@ export default async function EnglishHome() {
             Saw this number in a dream? Discover what it means
           </p>
         </Link>
+        {/* Footer */}
+        <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
+          <p>© 2026 Decode Number</p>
+          <div className="flex justify-center gap-4 text-xs">
+            <Link href="/en/privacy" className="hover:text-gray-600 transition-colors">Privacy Policy</Link>
+            <span>|</span>
+            <Link href="/en/terms" className="hover:text-gray-600 transition-colors">Terms of Service</Link>
+          </div>
+        </footer>
       </div>
     </main>
   );
