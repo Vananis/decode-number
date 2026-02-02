@@ -1,5 +1,13 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+import { generatePageAlternates } from "@/lib/alternates";
+
+export const metadata: Metadata = {
+  title: "Significados de Números Angelicales",
+  description: "Descifra los mensajes detrás de los números que ves",
+  alternates: generatePageAlternates(),
+};
 
 const popularSlugs = [
   "teeth-falling-out", "being-chased", "falling", "flying", "snake", "water",

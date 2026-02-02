@@ -1,5 +1,13 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+import { generatePageAlternates } from "@/lib/alternates";
+
+export const metadata: Metadata = {
+  title: "天使數字含義",
+  description: "解讀您看到的數字背後的訊息",
+  alternates: generatePageAlternates(),
+};
 
 const popularSlugs = [
   "teeth-falling-out", "being-chased", "falling", "flying", "snake", "water",

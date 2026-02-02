@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "About Us - Tell Dream",
-  description: "About Tell Dream - Your Dream Interpretation Guide",
+  title: "About Us - Decode Number",
+  description: "About Decode Number - Your Angel Number Guide",
+  alternates: generatePageAlternates("/about"),
 };
 
 export default function AboutPage() {

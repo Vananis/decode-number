@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad - Tell Dream",
-  description: "Política de Privacidad de Tell Dream",
+  title: "Política de Privacidad - Decode Number",
+  description: "Política de Privacidad de Decode Number",
+  alternates: generatePageAlternates("/privacy"),
 };
 
 export default function PrivacyPage() {

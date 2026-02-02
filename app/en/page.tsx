@@ -1,5 +1,13 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+import { generatePageAlternates } from "@/lib/alternates";
+
+export const metadata: Metadata = {
+  title: "Angel Number Meanings",
+  description: "Decode the messages behind the numbers you see",
+  alternates: generatePageAlternates(),
+};
 
 // 인기 숫자 순서
 const popularSlugs = [

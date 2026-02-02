@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー - Tell Dream",
-  description: "Tell Dreamのプライバシーポリシー",
+  title: "プライバシーポリシー - Decode Number",
+  description: "Decode Numberのプライバシーポリシー",
+  alternates: generatePageAlternates("/privacy"),
 };
 
 export default function PrivacyPage() {

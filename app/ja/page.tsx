@@ -1,5 +1,13 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+import { generatePageAlternates } from "@/lib/alternates";
+
+export const metadata: Metadata = {
+  title: "エンジェルナンバーの意味",
+  description: "繰り返し見る数字のメッセージを解読する",
+  alternates: generatePageAlternates(),
+};
 
 const popularSlugs = [
   "teeth-falling-out", "being-chased", "falling", "flying", "hebi", "water",

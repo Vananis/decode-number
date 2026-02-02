@@ -1,5 +1,13 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+import { generatePageAlternates } from "@/lib/alternates";
+
+export const metadata: Metadata = {
+  title: "엔젤 넘버 의미",
+  description: "반복적으로 보이는 숫자의 메시지를 해석하세요",
+  alternates: generatePageAlternates(),
+};
 
 const popularSlugs = [
   "teeth-falling-out", "being-chased", "falling", "flying", "snake", "water",

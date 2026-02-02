@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "利用規約 - Tell Dream",
-  description: "Tell Dreamの利用規約",
+  title: "利用規約 - Decode Number",
+  description: "Decode Numberの利用規約",
+  alternates: generatePageAlternates("/terms"),
 };
 
 export default function TermsPage() {

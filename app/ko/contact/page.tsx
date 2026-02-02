@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "문의하기 - Tell Dream",
-  description: "Tell Dream 문의",
+  title: "문의하기 - Decode Number",
+  description: "Decode Number 문의",
+  alternates: generatePageAlternates("/contact"),
 };
 
 export default function ContactPage() {

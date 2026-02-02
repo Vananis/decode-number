@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Tell Dream",
-  description: "Privacy Policy for Tell Dream - Dream Interpretation Guide",
+  title: "Privacy Policy - Decode Number",
+  description: "Privacy Policy for Decode Number - Angel Number Guide",
+  alternates: generatePageAlternates("/privacy"),
 };
 
 const content = {

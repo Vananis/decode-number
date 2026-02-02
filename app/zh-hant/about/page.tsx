@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "關於我們 - Tell Dream",
-  description: "關於 Tell Dream - 解夢指南",
+  title: "關於我們 - Decode Number",
+  description: "關於 Decode Number - 天使數字指南",
+  alternates: generatePageAlternates("/about"),
 };
 
 export default function AboutPage() {

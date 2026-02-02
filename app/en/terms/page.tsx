@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Tell Dream",
-  description: "Terms of Service for Tell Dream",
+  title: "Terms of Service - Decode Number",
+  description: "Terms of Service for Decode Number",
+  alternates: generatePageAlternates("/terms"),
 };
 
 export default function TermsPage() {
