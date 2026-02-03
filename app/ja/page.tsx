@@ -5,13 +5,13 @@ import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
   title: "エンジェルナンバーの意味",
-  description: "繰り返し見る数字のメッセージを解読する",
+  description: "繰り返し見る数字に隠されたメッセージを解読する",
   alternates: generatePageAlternates(),
 };
 
 const popularSlugs = [
-  "teeth-falling-out", "being-chased", "falling", "flying", "hebi", "water",
-  "death", "being-naked", "being-lost", "pregnancy", "spider", "ex-partner"
+  "111", "222", "333", "444", "555", "666", "777", "888", "999",
+  "1111", "1212", "1234"
 ];
 
 export default async function JapaneseHome() {
@@ -19,17 +19,21 @@ export default async function JapaneseHome() {
   
   const sortedSlugs = [
     ...popularSlugs.filter(s => allSlugs.includes(s)),
-    ...allSlugs.filter(s => !popularSlugs.includes(s)).sort()
+    ...allSlugs.filter(s => !popularSlugs.includes(s)).sort((a, b) => parseInt(a) - parseInt(b))
   ];
 
-  const topDreams = await Promise.all(
-    sortedSlugs.slice(0, 12).map(async (slug) => {
-      const { frontmatter } = await readMarkdownFile(slug, "ja");
-      return {
-        slug,
-        title: frontmatter.title || slug,
-        desc: frontmatter.description ? frontmatter.description.slice(0, 80) + "..." : ""
-      };
+  const topNumbers = await Promise.all(
+    sortedSlugs.slice(0, 9).map(async (slug) => {
+      try {
+        const { frontmatter } = await readMarkdownFile(slug, "ja");
+        return {
+          slug,
+          title: frontmatter.title || `${slug}エンジェルナンバー`,
+          desc: frontmatter.description ? frontmatter.description.slice(0, 80) + "..." : ""
+        };
+      } catch {
+        return { slug, title: `${slug}エンジェルナンバー`, desc: "" };
+      }
     })
   );
 
@@ -38,28 +42,28 @@ export default async function JapaneseHome() {
       <div className="max-w-5xl mx-auto px-4 py-16">
         <header className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            夢占い・夢診断ガイド
+            エンジェルナンバーの意味
           </h1>
           <p className="text-xl text-gray-600">
-            あなたの夢の意味を読み解く
+            繰り返し見る数字に隠されたメッセージを解読する
           </p>
         </header>
 
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            人気の夢占い
+            人気のエンジェルナンバー
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {topDreams.map((dream) => (
+            {topNumbers.map((number) => (
               <Link
-                key={dream.slug}
-                href={`/ja/dreams/${dream.slug}`}
+                key={number.slug}
+                href={`/ja/angel-numbers/${number.slug}`}
                 className="block p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-indigo-200 transition-all"
               >
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {dream.title.replace(/:.*/g, "")}
+                  {number.slug}の意味
                 </h3>
-                <p className="text-gray-600 text-sm line-clamp-2">{dream.desc}</p>
+                <p className="text-gray-600 text-sm line-clamp-2">{number.desc}</p>
               </Link>
             ))}
           </div>
@@ -67,31 +71,31 @@ export default async function JapaneseHome() {
 
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            すべての夢 ({allSlugs.length})
+            すべてのエンジェルナンバー ({allSlugs.length})
           </h2>
           <div className="flex flex-wrap justify-center gap-2">
             {sortedSlugs.map((slug) => (
               <Link
                 key={slug}
-                href={`/ja/dreams/${slug}`}
+                href={`/ja/angel-numbers/${slug}`}
                 className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-700 transition-colors"
               >
-                {slug.replace(/-/g, " ")}
+                {slug}
               </Link>
             ))}
           </div>
         </section>
 
         <Link
-          href="https://read-tarot.com"
-          className="block p-8 rounded-2xl text-center bg-gradient-to-r from-amber-100 via-orange-100 to-rose-100 hover:from-amber-200 hover:via-orange-200 hover:to-rose-200 transition-all shadow-sm hover:shadow-md"
+          href="https://tell-dream.com"
+          className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
         >
-          <span className="text-3xl mb-2 block">✨</span>
+          <span className="text-3xl mb-2 block">🌙</span>
           <span className="text-2xl font-serif font-semibold text-gray-800 tracking-wide">
-            タロットカードを引く
+            夢占い
           </span>
           <p className="text-gray-600 mt-2 text-sm">
-            タロットがあなたの道を照らします
+            この数字を夢で見ましたか？その意味を探る
           </p>
         </Link>
         {/* Footer */}
