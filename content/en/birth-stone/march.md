@@ -8,7 +8,7 @@ slug: "march"
 
 > **Quick Insight:** Aquamarine, the birthstone for March, has been treasured for centuries as a symbol of **courage, serenity, and communication**. Discover its rich history, spiritual significance, and how it connects to your birth month.
 
-\![Aquamarine - March birthstone illustration](/images/birthstone/march.webp)
+![Aquamarine - March birthstone illustration](/images/birthstone/march.webp)
 
 ---
 

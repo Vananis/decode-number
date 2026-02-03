@@ -8,7 +8,7 @@ slug: "aries"
 
 > **Quick Insight:** Aries (March 21 - April 19) is a Fire sign ruled by Mars, known for **bold initiative and fearless leadership**. Discover the depths of this sign's personality, relationships, and life path.
 
-\![Aries zodiac symbol illustration](/images/zodiac/aries.webp)
+![Aries zodiac symbol illustration](/images/zodiac/aries.webp)
 
 ---
 

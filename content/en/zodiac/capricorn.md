@@ -8,7 +8,7 @@ slug: "capricorn"
 
 > **Quick Insight:** Capricorn (December 22 - January 19) is an Earth sign ruled by Saturn, known for **unwavering determination and quiet ambition**. Discover the depths of this sign's personality, relationships, and life path.
 
-\![Capricorn zodiac symbol illustration](/images/zodiac/capricorn.webp)
+![Capricorn zodiac symbol illustration](/images/zodiac/capricorn.webp)
 
 ---
 

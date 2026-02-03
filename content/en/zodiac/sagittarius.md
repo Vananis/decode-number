@@ -8,7 +8,7 @@ slug: "sagittarius"
 
 > **Quick Insight:** Sagittarius (November 22 - December 21) is a Fire sign ruled by Jupiter, known for **boundless optimism and an insatiable thirst for adventure**. Discover the depths of this sign's personality, relationships, and life path.
 
-\![Sagittarius zodiac symbol illustration](/images/zodiac/sagittarius.webp)
+![Sagittarius zodiac symbol illustration](/images/zodiac/sagittarius.webp)
 
 ---
 

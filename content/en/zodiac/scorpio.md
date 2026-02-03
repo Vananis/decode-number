@@ -8,7 +8,7 @@ slug: "scorpio"
 
 > **Quick Insight:** Scorpio (October 23 - November 21) is a Water sign ruled by Pluto and Mars, known for **intense emotional depth and transformative power**. Discover the depths of this sign's personality, relationships, and life path.
 
-\![Scorpio zodiac symbol illustration](/images/zodiac/scorpio.webp)
+![Scorpio zodiac symbol illustration](/images/zodiac/scorpio.webp)
 
 ---
 

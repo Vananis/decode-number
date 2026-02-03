@@ -8,7 +8,7 @@ slug: "december"
 
 > **Quick Insight:** Poinsettia represents those born in December, symbolizing **success, celebration, and good cheer**. Discover how this vibrant winter flower's unique characteristics reflect personality traits, emotional patterns, and hidden strengths.
 
-\![Poinsettia - December birth flower illustration](/images/birth-flower/december.webp)
+![Poinsettia - December birth flower illustration](/images/birth-flower/december.webp)
 
 ---
 

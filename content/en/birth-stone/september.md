@@ -8,7 +8,7 @@ slug: "september"
 
 > **Quick Insight:** Sapphire, the birthstone for September, has been treasured for centuries as a symbol of **wisdom, loyalty, and nobility**. Discover its rich history, spiritual significance, and how it connects to your birth month.
 
-\![Sapphire - September birthstone illustration](/images/birthstone/september.webp)
+![Sapphire - September birthstone illustration](/images/birthstone/september.webp)
 
 ---
 

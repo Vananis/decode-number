@@ -8,7 +8,7 @@ slug: "december"
 
 > **Quick Insight:** Turquoise, the birthstone for December, has been treasured for centuries as a symbol of **protection, healing, and good fortune**. Discover its rich history, spiritual significance, and how it connects to your birth month.
 
-\![Turquoise - December birthstone illustration](/images/birthstone/december.webp)
+![Turquoise - December birthstone illustration](/images/birthstone/december.webp)
 
 ---
 

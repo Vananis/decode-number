@@ -91,7 +91,7 @@ export default async function Home({ params }: Props) {
                 className="block p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-indigo-200 transition-all"
               >
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {number.slug} Meaning
+                  {number.title}
                 </h3>
                 <p className="text-gray-600 text-sm line-clamp-2">{number.desc}</p>
               </Link>

@@ -8,7 +8,7 @@ slug: "june"
 
 > **Quick Insight:** Rose represents those born in June, symbolizing **Love, Passion, and Beauty**. Discover how this timeless flower's layered petals and intoxicating fragrance reflect personality traits, emotional depth, and hidden strengths that may define your character.
 
-\![Rose - June birth flower illustration](/images/birth-flower/june.webp)
+![Rose - June birth flower illustration](/images/birth-flower/june.webp)
 
 ---
 

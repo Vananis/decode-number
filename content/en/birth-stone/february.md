@@ -8,7 +8,7 @@ slug: "february"
 
 > **Quick Insight:** Amethyst, the birthstone for February, has been treasured for centuries as a symbol of **peace, clarity, and sobriety**. Discover its rich history, spiritual significance, and how it connects to your birth month.
 
-\![Amethyst - February birthstone illustration](/images/birthstone/february.webp)
+![Amethyst - February birthstone illustration](/images/birthstone/february.webp)
 
 ---
 

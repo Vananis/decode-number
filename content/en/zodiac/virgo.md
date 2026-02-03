@@ -8,7 +8,7 @@ slug: "virgo"
 
 > **Quick Insight:** Virgo (August 23 - September 22) is an Earth sign ruled by Mercury, known for **analytical precision and devoted service**. Discover the depths of this sign's personality, relationships, and life path.
 
-\![Virgo zodiac symbol illustration](/images/zodiac/virgo.webp)
+![Virgo zodiac symbol illustration](/images/zodiac/virgo.webp)
 
 ---
 
