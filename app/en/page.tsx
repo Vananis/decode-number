@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { getAllAngelNumberSlugs, readMarkdownFile } from "@/lib/markdown";
+import { getAllAngelNumberSlugs, getAllSlugs, readMarkdownFile } from "@/lib/markdown";
 import { generatePageAlternates } from "@/lib/alternates";
 
 export const metadata: Metadata = {
@@ -9,22 +9,29 @@ export const metadata: Metadata = {
   alternates: generatePageAlternates(),
 };
 
-// 인기 숫자 순서
 const popularSlugs = [
   "111", "222", "333", "444", "555", "666", "777", "888", "999",
   "1111", "1212", "1234"
 ];
 
+const months = [
+  "january", "february", "march", "april", "may", "june",
+  "july", "august", "september", "october", "november", "december"
+];
+
+const zodiacSigns = [
+  "aries", "taurus", "gemini", "cancer", "leo", "virgo",
+  "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"
+];
+
 export default async function EnglishHome() {
   const allSlugs = getAllAngelNumberSlugs();
   
-  // 인기 숫자 우선, 나머지는 숫자 순
   const sortedSlugs = [
     ...popularSlugs.filter(s => allSlugs.includes(s)),
     ...allSlugs.filter(s => !popularSlugs.includes(s)).sort((a, b) => parseInt(a) - parseInt(b))
   ];
 
-  // 상위 9개 표시
   const topNumbers = await Promise.all(
     sortedSlugs.slice(0, 9).map(async (slug) => {
       try {
@@ -52,6 +59,7 @@ export default async function EnglishHome() {
           </p>
         </header>
 
+        {/* Angel Numbers */}
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
             Popular Angel Numbers
@@ -89,6 +97,60 @@ export default async function EnglishHome() {
           </div>
         </section>
 
+        {/* Birth Flowers */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            🌸 Birth Flowers by Month
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month}
+                href={`/en/birth-flower/${month}`}
+                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-pink-800 capitalize">{month}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Birthstones */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            💎 Birthstones by Month
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month}
+                href={`/en/birth-stone/${month}`}
+                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-amber-800 capitalize">{month}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Zodiac Signs */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            ✨ Zodiac Signs
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {zodiacSigns.map((sign) => (
+              <Link
+                key={sign}
+                href={`/en/zodiac/${sign}`}
+                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-purple-800 capitalize">{sign}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <Link
           href="https://tell-dream.com"
           className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
@@ -101,7 +163,7 @@ export default async function EnglishHome() {
             Saw this number in a dream? Discover what it means
           </p>
         </Link>
-        {/* Footer */}
+
         <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
           <p>© 2026 Decode Number</p>
           <div className="flex justify-center gap-4 text-xs">

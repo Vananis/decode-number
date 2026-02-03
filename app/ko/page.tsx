@@ -14,6 +14,36 @@ const popularSlugs = [
   "1111", "1212", "1234"
 ];
 
+const months = [
+  { slug: "january", name: "1월" },
+  { slug: "february", name: "2월" },
+  { slug: "march", name: "3월" },
+  { slug: "april", name: "4월" },
+  { slug: "may", name: "5월" },
+  { slug: "june", name: "6월" },
+  { slug: "july", name: "7월" },
+  { slug: "august", name: "8월" },
+  { slug: "september", name: "9월" },
+  { slug: "october", name: "10월" },
+  { slug: "november", name: "11월" },
+  { slug: "december", name: "12월" },
+];
+
+const zodiacSigns = [
+  { slug: "aries", name: "양자리" },
+  { slug: "taurus", name: "황소자리" },
+  { slug: "gemini", name: "쌍둥이자리" },
+  { slug: "cancer", name: "게자리" },
+  { slug: "leo", name: "사자자리" },
+  { slug: "virgo", name: "처녀자리" },
+  { slug: "libra", name: "천칭자리" },
+  { slug: "scorpio", name: "전갈자리" },
+  { slug: "sagittarius", name: "사수자리" },
+  { slug: "capricorn", name: "염소자리" },
+  { slug: "aquarius", name: "물병자리" },
+  { slug: "pisces", name: "물고기자리" },
+];
+
 export default async function KoreanHome() {
   const allSlugs = getAllAngelNumberSlugs("ko");
   
@@ -86,6 +116,57 @@ export default async function KoreanHome() {
           </div>
         </section>
 
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            🌸 탄생화
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month.slug}
+                href={`/ko/birth-flower/${month.slug}`}
+                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-pink-800">{month.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            💎 탄생석
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month.slug}
+                href={`/ko/birth-stone/${month.slug}`}
+                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-amber-800">{month.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            ✨ 별자리 운세
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {zodiacSigns.map((sign) => (
+              <Link
+                key={sign.slug}
+                href={`/ko/zodiac/${sign.slug}`}
+                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-purple-800">{sign.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <Link
           href="https://tell-dream.com"
           className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
@@ -98,7 +179,7 @@ export default async function KoreanHome() {
             이 숫자를 꿈에서 보셨나요? 그 의미를 알아보세요
           </p>
         </Link>
-        {/* Footer */}
+
         <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
           <p>© 2026 Decode Number</p>
           <div className="flex justify-center gap-4 text-xs">

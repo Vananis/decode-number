@@ -14,6 +14,36 @@ const popularSlugs = [
   "1111", "1212", "1234"
 ];
 
+const months = [
+  { slug: "january", name: "1月" },
+  { slug: "february", name: "2月" },
+  { slug: "march", name: "3月" },
+  { slug: "april", name: "4月" },
+  { slug: "may", name: "5月" },
+  { slug: "june", name: "6月" },
+  { slug: "july", name: "7月" },
+  { slug: "august", name: "8月" },
+  { slug: "september", name: "9月" },
+  { slug: "october", name: "10月" },
+  { slug: "november", name: "11月" },
+  { slug: "december", name: "12月" },
+];
+
+const zodiacSigns = [
+  { slug: "aries", name: "牡羊座" },
+  { slug: "taurus", name: "牡牛座" },
+  { slug: "gemini", name: "双子座" },
+  { slug: "cancer", name: "蟹座" },
+  { slug: "leo", name: "獅子座" },
+  { slug: "virgo", name: "乙女座" },
+  { slug: "libra", name: "天秤座" },
+  { slug: "scorpio", name: "蠍座" },
+  { slug: "sagittarius", name: "射手座" },
+  { slug: "capricorn", name: "山羊座" },
+  { slug: "aquarius", name: "水瓶座" },
+  { slug: "pisces", name: "魚座" },
+];
+
 export default async function JapaneseHome() {
   const allSlugs = getAllAngelNumberSlugs("ja");
   
@@ -86,6 +116,57 @@ export default async function JapaneseHome() {
           </div>
         </section>
 
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            🌸 誕生花
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month.slug}
+                href={`/ja/birth-flower/${month.slug}`}
+                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-pink-800">{month.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            💎 誕生石
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month.slug}
+                href={`/ja/birth-stone/${month.slug}`}
+                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-amber-800">{month.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            ✨ 星座占い
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {zodiacSigns.map((sign) => (
+              <Link
+                key={sign.slug}
+                href={`/ja/zodiac/${sign.slug}`}
+                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-purple-800">{sign.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <Link
           href="https://tell-dream.com"
           className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
@@ -98,7 +179,7 @@ export default async function JapaneseHome() {
             この数字を夢で見ましたか？その意味を探る
           </p>
         </Link>
-        {/* Footer */}
+
         <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
           <p>© 2026 Decode Number</p>
           <div className="flex justify-center gap-4 text-xs">

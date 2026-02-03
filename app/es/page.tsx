@@ -14,6 +14,36 @@ const popularSlugs = [
   "1111", "1212", "1234"
 ];
 
+const months = [
+  { slug: "january", name: "Enero" },
+  { slug: "february", name: "Febrero" },
+  { slug: "march", name: "Marzo" },
+  { slug: "april", name: "Abril" },
+  { slug: "may", name: "Mayo" },
+  { slug: "june", name: "Junio" },
+  { slug: "july", name: "Julio" },
+  { slug: "august", name: "Agosto" },
+  { slug: "september", name: "Septiembre" },
+  { slug: "october", name: "Octubre" },
+  { slug: "november", name: "Noviembre" },
+  { slug: "december", name: "Diciembre" },
+];
+
+const zodiacSigns = [
+  { slug: "aries", name: "Aries" },
+  { slug: "taurus", name: "Tauro" },
+  { slug: "gemini", name: "Géminis" },
+  { slug: "cancer", name: "Cáncer" },
+  { slug: "leo", name: "Leo" },
+  { slug: "virgo", name: "Virgo" },
+  { slug: "libra", name: "Libra" },
+  { slug: "scorpio", name: "Escorpio" },
+  { slug: "sagittarius", name: "Sagitario" },
+  { slug: "capricorn", name: "Capricornio" },
+  { slug: "aquarius", name: "Acuario" },
+  { slug: "pisces", name: "Piscis" },
+];
+
 export default async function SpanishHome() {
   const allSlugs = getAllAngelNumberSlugs("es");
   
@@ -86,6 +116,57 @@ export default async function SpanishHome() {
           </div>
         </section>
 
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            🌸 Flores de Nacimiento
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month.slug}
+                href={`/es/birth-flower/${month.slug}`}
+                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-pink-800">{month.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            💎 Piedras de Nacimiento
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {months.map((month) => (
+              <Link
+                key={month.slug}
+                href={`/es/birth-stone/${month.slug}`}
+                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-amber-800">{month.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            ✨ Signos del Zodiaco
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {zodiacSigns.map((sign) => (
+              <Link
+                key={sign.slug}
+                href={`/es/zodiac/${sign.slug}`}
+                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
+              >
+                <span className="text-sm font-medium text-purple-800">{sign.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <Link
           href="https://tell-dream.com"
           className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
@@ -98,7 +179,7 @@ export default async function SpanishHome() {
             ¿Viste este número en un sueño? Descubre su significado
           </p>
         </Link>
-        {/* Footer */}
+
         <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
           <p>© 2026 Decode Number</p>
           <div className="flex justify-center gap-4 text-xs">
