@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         <div className="space-y-8">
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">1. 収集する情報</h2>
-            <p className="text-gray-600">Tell Dreamはユーザーアカウントを必要とせず、個人情報を直接収集しません。サーバーに個人データを保存することはありません。</p>
+            <p className="text-gray-600">Decode Numberはユーザーアカウントを必要とせず、個人情報を直接収集しません。サーバーに個人データを保存することはありません。</p>
           </section>
 
           <section>

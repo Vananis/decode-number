@@ -108,6 +108,8 @@ export default async function EnglishHome() {
             <Link href="/en/privacy" className="hover:text-gray-600 transition-colors">Privacy Policy</Link>
             <span>|</span>
             <Link href="/en/terms" className="hover:text-gray-600 transition-colors">Terms of Service</Link>
+            <span>|</span>
+            <a href="mailto:contact@decode-number.com" className="hover:text-gray-600 transition-colors">Contact</a>
           </div>
         </footer>
       </div>

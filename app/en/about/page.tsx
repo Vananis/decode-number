@@ -19,26 +19,26 @@ export default function AboutPage() {
         </nav>
 
         <h1 className="text-3xl font-bold text-indigo-900 mb-2">About Us</h1>
-        <p className="text-gray-500 mb-8">Welcome to Tell Dream</p>
+        <p className="text-gray-500 mb-8">Welcome to Decode Number</p>
         
         <div className="space-y-8">
           <section>
-            <h2 className="text-xl font-semibold text-indigo-800 mb-3">What is Tell Dream?</h2>
-            <p className="text-gray-600 whitespace-pre-line">Tell Dream is a comprehensive dream interpretation guide. We explore the symbolism and meanings behind your dreams, drawing from psychology, cultural traditions, and spiritual perspectives to help you understand what your subconscious might be telling you.</p>
+            <h2 className="text-xl font-semibold text-indigo-800 mb-3">What is Decode Number?</h2>
+            <p className="text-gray-600 whitespace-pre-line">Decode Number is your comprehensive guide to angel numbers. We explore the symbolism and meanings behind number sequences you encounter, drawing from numerology, spiritual traditions, and psychological perspectives to help you understand what messages might be awaiting you.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">Our Approach</h2>
-            <p className="text-gray-600 whitespace-pre-line">{`• Psychological interpretations (Freud, Jung, modern psychology)
-• Cultural and traditional meanings from around the world
-• Spiritual and symbolic perspectives
-• Practical dream scenario analysis
-• Multi-language support (English, Spanish, Japanese, Korean, Traditional Chinese)`}</p>
+            <p className="text-gray-600 whitespace-pre-line">{`• Numerological interpretations and digit meanings
+• Cultural and traditional number symbolism from around the world
+• Spiritual and metaphysical perspectives
+• Practical guidance for life areas (love, career, finance)
+• Multi-language support (English, Spanish, German, French, Japanese)`}</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">Disclaimer</h2>
-            <p className="text-gray-600 whitespace-pre-line">Dream interpretations are provided for entertainment and self-reflection purposes only. They should not be used as a substitute for professional advice (medical, psychological, legal, or financial).</p>
+            <p className="text-gray-600 whitespace-pre-line">Angel number interpretations are provided for entertainment and self-reflection purposes only. They are based on spiritual and numerological traditions without scientific basis and should not be used as a substitute for professional advice (medical, psychological, legal, or financial).</p>
           </section>
         </div>
       </div>

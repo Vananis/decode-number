@@ -101,6 +101,8 @@ export default async function ChineseTraditionalHome() {
             <Link href="/zh-hant/privacy" className="hover:text-gray-600 transition-colors">隱私權政策</Link>
             <span>|</span>
             <Link href="/zh-hant/terms" className="hover:text-gray-600 transition-colors">服務條款</Link>
+            <span>|</span>
+            <a href="mailto:contact@decode-number.com" className="hover:text-gray-600 transition-colors">聯繫我們</a>
           </div>
         </footer>
       </div>

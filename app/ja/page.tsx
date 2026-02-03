@@ -101,6 +101,8 @@ export default async function JapaneseHome() {
             <Link href="/ja/privacy" className="hover:text-gray-600 transition-colors">プライバシーポリシー</Link>
             <span>|</span>
             <Link href="/ja/terms" className="hover:text-gray-600 transition-colors">利用規約</Link>
+            <span>|</span>
+            <a href="mailto:contact@decode-number.com" className="hover:text-gray-600 transition-colors">お問い合わせ</a>
           </div>
         </footer>
       </div>

@@ -26,14 +26,14 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">Email Contact</h2>
             <p className="text-gray-600 whitespace-pre-line">{`For all inquiries, please email us at:
 
-📧 contact@tell-dream.com
+📧 contact@decode-number.com
 
 We will respond as soon as possible.`}</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">Feedback</h2>
-            <p className="text-gray-600">We welcome your feedback to improve Tell Dream. Please share your suggestions, corrections, or ideas for new dream topics.</p>
+            <p className="text-gray-600">We welcome your feedback to improve Decode Number. Please share your suggestions, corrections, or ideas for new angel number content.</p>
           </section>
         </div>
       </div>

@@ -14,7 +14,7 @@ const content = {
   sections: [
     {
       title: "1. Information We Collect",
-      content: `Tell Dream does not require user accounts or collect personal information directly. We do not store any personal data on our servers.`
+      content: `Decode Number does not require user accounts or collect personal information directly. We do not store any personal data on our servers.`
     },
     {
       title: "2. Analytics",

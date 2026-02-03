@@ -24,19 +24,19 @@ export default function TermsPage() {
         <div className="space-y-8">
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">1. サービス概要</h2>
-            <p className="text-gray-600">Tell Dreamは娯楽と自己内省の目的でのみ夢の解釈コンテンツを提供します。</p>
+            <p className="text-gray-600">Decode Numberは娯楽と自己内省の目的でのみエンジェルナンバーの解釈コンテンツを提供します。</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">2. 免責事項</h2>
-            <p className="text-gray-600 whitespace-pre-line">{`• 夢の解釈は娯楽目的であり、専門的なアドバイスに代わるものではありません。
-• 解釈の正確性を保証するものではありません。
+            <p className="text-gray-600 whitespace-pre-line">{`• エンジェルナンバーの解釈は娯楽目的であり、専門的なアドバイスに代わるものではありません。
+• エンジェルナンバーはスピリチュアルな概念であり、科学的根拠はありません。
 • 当サイトのコンテンツに基づく決定はお客様自身の責任となります。`}</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">3. 知的財産権</h2>
-            <p className="text-gray-600">Tell Dreamのすべてのコンテンツは著作権で保護されています。無断複製・配布を禁止します。</p>
+            <p className="text-gray-600">Decode Numberのすべてのコンテンツは著作権で保護されています。無断複製・配布を禁止します。</p>
           </section>
 
           <section>

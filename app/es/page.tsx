@@ -101,6 +101,8 @@ export default async function SpanishHome() {
             <Link href="/es/privacy" className="hover:text-gray-600 transition-colors">Política de Privacidad</Link>
             <span>|</span>
             <Link href="/es/terms" className="hover:text-gray-600 transition-colors">Términos de Servicio</Link>
+            <span>|</span>
+            <a href="mailto:contact@decode-number.com" className="hover:text-gray-600 transition-colors">Contacto</a>
           </div>
         </footer>
       </div>

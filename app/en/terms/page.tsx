@@ -24,19 +24,19 @@ export default function TermsPage() {
         <div className="space-y-8">
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">1. Service Description</h2>
-            <p className="text-gray-600">Tell Dream provides dream interpretation content for entertainment and self-reflection purposes only.</p>
+            <p className="text-gray-600">Decode Number provides angel number interpretation content for entertainment and self-reflection purposes only.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">2. Disclaimer</h2>
-            <p className="text-gray-600 whitespace-pre-line">{`• Dream interpretations are for entertainment and should not replace professional advice.
-• We do not guarantee the accuracy of any interpretation.
+            <p className="text-gray-600 whitespace-pre-line">{`• Angel number interpretations are for entertainment and should not replace professional advice.
+• We do not guarantee the accuracy of any interpretation. Angel numbers are spiritual concepts without scientific basis.
 • Decisions made based on our content are your sole responsibility.`}</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-indigo-800 mb-3">3. Intellectual Property</h2>
-            <p className="text-gray-600">All content on Tell Dream is protected by copyright. Unauthorized reproduction or distribution is prohibited.</p>
+            <p className="text-gray-600">All content on Decode Number is protected by copyright. Unauthorized reproduction or distribution is prohibited.</p>
           </section>
 
           <section>

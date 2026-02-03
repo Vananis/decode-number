@@ -101,6 +101,8 @@ export default async function KoreanHome() {
             <Link href="/ko/privacy" className="hover:text-gray-600 transition-colors">개인정보처리방침</Link>
             <span>|</span>
             <Link href="/ko/terms" className="hover:text-gray-600 transition-colors">이용약관</Link>
+            <span>|</span>
+            <a href="mailto:contact@decode-number.com" className="hover:text-gray-600 transition-colors">문의</a>
           </div>
         </footer>
       </div>
