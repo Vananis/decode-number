@@ -14,36 +14,6 @@ const popularSlugs = [
   "1111", "1212", "1234"
 ];
 
-const months = [
-  { slug: "january", name: "Enero" },
-  { slug: "february", name: "Febrero" },
-  { slug: "march", name: "Marzo" },
-  { slug: "april", name: "Abril" },
-  { slug: "may", name: "Mayo" },
-  { slug: "june", name: "Junio" },
-  { slug: "july", name: "Julio" },
-  { slug: "august", name: "Agosto" },
-  { slug: "september", name: "Septiembre" },
-  { slug: "october", name: "Octubre" },
-  { slug: "november", name: "Noviembre" },
-  { slug: "december", name: "Diciembre" },
-];
-
-const zodiacSigns = [
-  { slug: "aries", name: "Aries" },
-  { slug: "taurus", name: "Tauro" },
-  { slug: "gemini", name: "Géminis" },
-  { slug: "cancer", name: "Cáncer" },
-  { slug: "leo", name: "Leo" },
-  { slug: "virgo", name: "Virgo" },
-  { slug: "libra", name: "Libra" },
-  { slug: "scorpio", name: "Escorpio" },
-  { slug: "sagittarius", name: "Sagitario" },
-  { slug: "capricorn", name: "Capricornio" },
-  { slug: "aquarius", name: "Acuario" },
-  { slug: "pisces", name: "Piscis" },
-];
-
 export default async function SpanishHome() {
   const allSlugs = getAllAngelNumberSlugs("es");
   
@@ -111,57 +81,6 @@ export default async function SpanishHome() {
                 className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-700 transition-colors"
               >
                 {slug}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            🌸 Flores de Nacimiento
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {months.map((month) => (
-              <Link
-                key={month.slug}
-                href={`/es/birth-flower/${month.slug}`}
-                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-pink-800">{month.name}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            💎 Piedras de Nacimiento
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {months.map((month) => (
-              <Link
-                key={month.slug}
-                href={`/es/birth-stone/${month.slug}`}
-                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-amber-800">{month.name}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            ✨ Signos del Zodiaco
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {zodiacSigns.map((sign) => (
-              <Link
-                key={sign.slug}
-                href={`/es/zodiac/${sign.slug}`}
-                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-purple-800">{sign.name}</span>
               </Link>
             ))}
           </div>

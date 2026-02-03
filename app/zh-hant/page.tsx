@@ -14,36 +14,6 @@ const popularSlugs = [
   "1111", "1212", "1234"
 ];
 
-const months = [
-  { slug: "january", name: "一月" },
-  { slug: "february", name: "二月" },
-  { slug: "march", name: "三月" },
-  { slug: "april", name: "四月" },
-  { slug: "may", name: "五月" },
-  { slug: "june", name: "六月" },
-  { slug: "july", name: "七月" },
-  { slug: "august", name: "八月" },
-  { slug: "september", name: "九月" },
-  { slug: "october", name: "十月" },
-  { slug: "november", name: "十一月" },
-  { slug: "december", name: "十二月" },
-];
-
-const zodiacSigns = [
-  { slug: "aries", name: "牡羊座" },
-  { slug: "taurus", name: "金牛座" },
-  { slug: "gemini", name: "雙子座" },
-  { slug: "cancer", name: "巨蟹座" },
-  { slug: "leo", name: "獅子座" },
-  { slug: "virgo", name: "處女座" },
-  { slug: "libra", name: "天秤座" },
-  { slug: "scorpio", name: "天蠍座" },
-  { slug: "sagittarius", name: "射手座" },
-  { slug: "capricorn", name: "摩羯座" },
-  { slug: "aquarius", name: "水瓶座" },
-  { slug: "pisces", name: "雙魚座" },
-];
-
 export default async function ChineseTraditionalHome() {
   const allSlugs = getAllAngelNumberSlugs("zh-hant");
   
@@ -111,57 +81,6 @@ export default async function ChineseTraditionalHome() {
                 className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-700 transition-colors"
               >
                 {slug}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            🌸 誕生花
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {months.map((month) => (
-              <Link
-                key={month.slug}
-                href={`/zh-hant/birth-flower/${month.slug}`}
-                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-pink-800">{month.name}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            💎 誕生石
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {months.map((month) => (
-              <Link
-                key={month.slug}
-                href={`/zh-hant/birth-stone/${month.slug}`}
-                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-amber-800">{month.name}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            ✨ 星座運勢
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {zodiacSigns.map((sign) => (
-              <Link
-                key={sign.slug}
-                href={`/zh-hant/zodiac/${sign.slug}`}
-                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-purple-800">{sign.name}</span>
               </Link>
             ))}
           </div>

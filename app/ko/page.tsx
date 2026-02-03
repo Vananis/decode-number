@@ -14,36 +14,6 @@ const popularSlugs = [
   "1111", "1212", "1234"
 ];
 
-const months = [
-  { slug: "january", name: "1월" },
-  { slug: "february", name: "2월" },
-  { slug: "march", name: "3월" },
-  { slug: "april", name: "4월" },
-  { slug: "may", name: "5월" },
-  { slug: "june", name: "6월" },
-  { slug: "july", name: "7월" },
-  { slug: "august", name: "8월" },
-  { slug: "september", name: "9월" },
-  { slug: "october", name: "10월" },
-  { slug: "november", name: "11월" },
-  { slug: "december", name: "12월" },
-];
-
-const zodiacSigns = [
-  { slug: "aries", name: "양자리" },
-  { slug: "taurus", name: "황소자리" },
-  { slug: "gemini", name: "쌍둥이자리" },
-  { slug: "cancer", name: "게자리" },
-  { slug: "leo", name: "사자자리" },
-  { slug: "virgo", name: "처녀자리" },
-  { slug: "libra", name: "천칭자리" },
-  { slug: "scorpio", name: "전갈자리" },
-  { slug: "sagittarius", name: "사수자리" },
-  { slug: "capricorn", name: "염소자리" },
-  { slug: "aquarius", name: "물병자리" },
-  { slug: "pisces", name: "물고기자리" },
-];
-
 export default async function KoreanHome() {
   const allSlugs = getAllAngelNumberSlugs("ko");
   
@@ -111,57 +81,6 @@ export default async function KoreanHome() {
                 className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-700 transition-colors"
               >
                 {slug}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            🌸 탄생화
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {months.map((month) => (
-              <Link
-                key={month.slug}
-                href={`/ko/birth-flower/${month.slug}`}
-                className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-pink-800">{month.name}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            💎 탄생석
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {months.map((month) => (
-              <Link
-                key={month.slug}
-                href={`/ko/birth-stone/${month.slug}`}
-                className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-amber-800">{month.name}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            ✨ 별자리 운세
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {zodiacSigns.map((sign) => (
-              <Link
-                key={sign.slug}
-                href={`/ko/zodiac/${sign.slug}`}
-                className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-purple-800">{sign.name}</span>
               </Link>
             ))}
           </div>
