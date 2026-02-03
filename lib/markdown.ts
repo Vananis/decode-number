@@ -49,7 +49,8 @@ export function getAlternateLanguages(slug: string, contentType: ContentType = '
     const contentDir = getContentDir(locale, contentType);
     const filePath = path.join(contentDir, `${slug}.md`);
     if (fs.existsSync(filePath)) {
-      alternates.push({ locale, url: `/${locale}/${contentType}/${slug}` });
+      const urlPath = contentType === 'number' ? 'angel-numbers' : contentType;
+      alternates.push({ locale, url: `/${locale}/${urlPath}/${slug}` });
     }
   }
   

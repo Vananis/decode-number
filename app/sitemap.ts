@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     contentTypes.flatMap((contentType) => {
       const slugs = getAllSlugs(locale, contentType);
       return slugs.map((slug) => ({
-        url: `${baseUrl}/${locale}/${contentType}/${slug}`,
+        url: `${baseUrl}/${locale}/${contentType === "number" ? "angel-numbers" : contentType}/${slug}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
         priority: contentType === "number" ? 0.8 : 0.7,
