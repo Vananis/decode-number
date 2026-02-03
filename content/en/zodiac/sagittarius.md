@@ -1,3 +1,9 @@
+---
+title: "Sagittarius: The Archer"
+description: "Discover the personality traits, compatibility, and life path of Sagittarius zodiac sign."
+slug: "sagittarius"
+---
+
 # Sagittarius: The Archer
 
 > **Quick Insight:** Sagittarius (November 22 - December 21) is a Fire sign ruled by Jupiter, known for **boundless optimism and an insatiable thirst for adventure**. Discover the depths of this sign's personality, relationships, and life path.

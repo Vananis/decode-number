@@ -1,3 +1,9 @@
+---
+title: "Libra: The Scales"
+description: "Discover the personality traits, compatibility, and life path of Libra zodiac sign."
+slug: "libra"
+---
+
 # Libra: The Scales
 
 > **Quick Insight:** Libra (September 23 - October 22) is an Air sign ruled by Venus, known for **seeking harmony, balance, and beauty in all things**. Discover the depths of this sign's personality, relationships, and life path.

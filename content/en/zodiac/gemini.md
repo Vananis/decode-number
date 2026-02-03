@@ -1,3 +1,9 @@
+---
+title: "Gemini: The Twins"
+description: "Discover the personality traits, compatibility, and life path of Gemini zodiac sign."
+slug: "gemini"
+---
+
 # Gemini: The Twins
 
 > **Quick Insight:** Gemini (May 21 - June 20) is an Air sign ruled by Mercury, known for **intellectual curiosity and versatile communication**. Discover the depths of this sign's personality, relationships, and life path.

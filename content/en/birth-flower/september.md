@@ -1,3 +1,9 @@
+---
+title: "September Birth Flower: Aster"
+description: "Discover the meaning and symbolism of Aster, the birth flower for September."
+slug: "september"
+---
+
 # September Birth Flower: Aster
 
 > **Quick Insight:** Aster represents those born in September, symbolizing **Wisdom, Faith, and Valor**. Discover how this star-shaped bloom reflects the analytical mind, deep convictions, and quiet courage that often characterize September-born individuals.

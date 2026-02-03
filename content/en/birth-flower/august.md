@@ -1,3 +1,9 @@
+---
+title: "August Birth Flower: Gladiolus"
+description: "Discover the meaning and symbolism of Gladiolus, the birth flower for August."
+slug: "august"
+---
+
 # August Birth Flower: Gladiolus
 
 > **Quick Insight:** Gladiolus represents those born in August, symbolizing **strength, integrity, and infatuation**. Discover how this striking sword-shaped flower reflects the bold personality traits, passionate hearts, and inner fortitude of August-born individuals.

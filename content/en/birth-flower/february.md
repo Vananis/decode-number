@@ -1,3 +1,9 @@
+---
+title: "February Birth Flower: Violet"
+description: "Discover the meaning and symbolism of Violet, the birth flower for February."
+slug: "february"
+---
+
 # February Birth Flower: Violet
 
 > **Quick Insight:** Violet represents those born in February, symbolizing **faithfulness, humility, and virtue**. Discover how this delicate woodland flower reflects deep loyalty, quiet strength, and a gentle spirit that often conceals profound inner wisdom.

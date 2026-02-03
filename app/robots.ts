@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://decode-number.com/sitemap.xml",
+    sitemap: "https://www.decode-number.com/sitemap.xml",
   }
 }

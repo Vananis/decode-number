@@ -1,3 +1,9 @@
+---
+title: "November Birthstone: Topaz"
+description: "Discover the meaning and properties of Topaz, the birthstone for November."
+slug: "november"
+---
+
 # November Birthstone: Topaz
 
 > **Quick Insight:** Topaz, the birthstone for November, has been treasured for centuries as a symbol of **strength, healing, and abundance**. Discover its rich history, spiritual significance, and how it connects to your birth month.

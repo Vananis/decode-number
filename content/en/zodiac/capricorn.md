@@ -1,3 +1,9 @@
+---
+title: "Capricorn: The Goat"
+description: "Discover the personality traits, compatibility, and life path of Capricorn zodiac sign."
+slug: "capricorn"
+---
+
 # Capricorn: The Goat
 
 > **Quick Insight:** Capricorn (December 22 - January 19) is an Earth sign ruled by Saturn, known for **unwavering determination and quiet ambition**. Discover the depths of this sign's personality, relationships, and life path.

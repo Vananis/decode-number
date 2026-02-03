@@ -1,3 +1,9 @@
+---
+title: "October Birth Flower: Marigold"
+description: "Discover the meaning and symbolism of Marigold, the birth flower for October."
+slug: "october"
+---
+
 # October Birth Flower: Marigold
 
 > **Quick Insight:** Marigold represents those born in October, symbolizing **passion, creativity, and grief**. Discover how this vibrant flower's golden hues and resilient nature reflect the complex emotional depth, artistic spirit, and transformative energy often found in October-born individuals.

@@ -1,3 +1,9 @@
+---
+title: "Aries: The Ram"
+description: "Discover the personality traits, compatibility, and life path of Aries zodiac sign."
+slug: "aries"
+---
+
 # Aries: The Ram
 
 > **Quick Insight:** Aries (March 21 - April 19) is a Fire sign ruled by Mars, known for **bold initiative and fearless leadership**. Discover the depths of this sign's personality, relationships, and life path.

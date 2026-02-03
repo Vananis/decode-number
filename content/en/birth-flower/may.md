@@ -1,3 +1,9 @@
+---
+title: "May Birth Flower: Lily of the Valley"
+description: "Discover the meaning and symbolism of Lily of the Valley, the birth flower for May."
+slug: "may"
+---
+
 # May Birth Flower: Lily of the Valley
 
 > **Quick Insight:** Lily of the Valley represents those born in May, symbolizing **sweetness, humility, and the return of happiness**. Discover how this delicate woodland flower's hidden strength and captivating fragrance reflect personality traits, emotional patterns, and the quiet power found in gentle spirits.

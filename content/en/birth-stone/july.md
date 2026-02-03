@@ -1,3 +1,9 @@
+---
+title: "July Birthstone: Ruby"
+description: "Discover the meaning and properties of Ruby, the birthstone for July."
+slug: "july"
+---
+
 # July Birthstone: Ruby
 
 > **Quick Insight:** Ruby, the birthstone for July, has been treasured for centuries as a symbol of **Passion, Protection, and Prosperity**. Known as the "King of Gems," this magnificent red stone carries the fire of the sun and the blood of the earth. Discover its rich history, spiritual significance, and how it connects to your birth month.

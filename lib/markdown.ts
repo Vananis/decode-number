@@ -3,7 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
-type Locale = 'en' | 'es' | 'ja' | 'ko' | 'zh-hant';
+export const locales = ['en', 'es', 'ja', 'ko', 'zh-hant'] as const;
+export type Locale = (typeof locales)[number];
 type ContentType = 'number' | 'birth-flower' | 'birth-stone' | 'zodiac';
 
 function getContentDir(locale: Locale, contentType: ContentType = 'number'): string {

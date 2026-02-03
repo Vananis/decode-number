@@ -1,3 +1,9 @@
+---
+title: "Aquarius: The Water Bearer"
+description: "Discover the personality traits, compatibility, and life path of Aquarius zodiac sign."
+slug: "aquarius"
+---
+
 # Aquarius: The Water Bearer
 
 > **Quick Insight:** Aquarius (January 20 - February 18) is an Air sign ruled by Uranus and traditionally Saturn, known for **visionary thinking and humanitarian ideals**. Discover the depths of this sign's personality, relationships, and life path.

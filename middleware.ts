@@ -35,7 +35,9 @@ export function middleware(request: NextRequest) {
   )
 
   if (pathnameHasLocale) {
-    return NextResponse.next()
+    const response = NextResponse.next()
+    response.headers.set("x-pathname", pathname)
+    return response
   }
 
   if (
@@ -53,7 +55,7 @@ export function middleware(request: NextRequest) {
   const locale = getPreferredLocale(request)
   const url = new URL(`/${locale}${pathname}`, request.url)
   
-  return NextResponse.redirect(url)
+  return NextResponse.redirect(url, 301)
 }
 
 export const config = {

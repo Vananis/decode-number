@@ -1,3 +1,9 @@
+---
+title: "Cancer: The Crab"
+description: "Discover the personality traits, compatibility, and life path of Cancer zodiac sign."
+slug: "cancer"
+---
+
 # Cancer: The Crab
 
 > **Quick Insight:** Cancer (June 21 - July 22) is a Water sign ruled by the Moon, known for **profound emotional depth and nurturing devotion**. Discover the depths of this sign's personality, relationships, and life path.

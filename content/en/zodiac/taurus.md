@@ -1,3 +1,9 @@
+---
+title: "Taurus: The Bull"
+description: "Discover the personality traits, compatibility, and life path of Taurus zodiac sign."
+slug: "taurus"
+---
+
 # Taurus: The Bull
 
 > **Quick Insight:** Taurus (April 20 - May 20) is an Earth sign ruled by Venus, known for **unwavering determination and sensual appreciation of life's pleasures**. Discover the depths of this sign's personality, relationships, and life path.

@@ -1,3 +1,9 @@
+---
+title: "June Birthstone: Pearl"
+description: "Discover the meaning and properties of Pearl, the birthstone for June."
+slug: "june"
+---
+
 # June Birthstone: Pearl
 
 > **Quick Insight:** Pearl, the birthstone for June, has been treasured for centuries as a symbol of **purity, innocence, and integrity**. Discover its rich history, spiritual significance, and how it connects to your birth month.

@@ -1,0 +1,141 @@
+import { Locale } from './markdown';
+
+type Dictionary = {
+  home: {
+    title: string;
+    subtitle: string;
+    popularNumbers: string;
+    allNumbers: string;
+    birthFlowers: string;
+    birthStones: string;
+    zodiacSigns: string;
+    dreamCta: string;
+    dreamCtaDesc: string;
+  };
+  nav: {
+    home: string;
+    privacy: string;
+    terms: string;
+    contact: string;
+  };
+  footer: {
+    copyright: string;
+  };
+};
+
+const dictionaries: Record<Locale, Dictionary> = {
+  en: {
+    home: {
+      title: "Angel Number Meanings",
+      subtitle: "Decode the messages behind the numbers you see",
+      popularNumbers: "Popular Angel Numbers",
+      allNumbers: "All Angel Numbers",
+      birthFlowers: "🌸 Birth Flowers by Month",
+      birthStones: "💎 Birthstones by Month",
+      zodiacSigns: "✨ Zodiac Signs",
+      dreamCta: "Dream Meanings",
+      dreamCtaDesc: "Saw this number in a dream? Discover what it means",
+    },
+    nav: {
+      home: "← Home",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+      contact: "Contact",
+    },
+    footer: {
+      copyright: "© 2026 Decode Number",
+    },
+  },
+  ja: {
+    home: {
+      title: "エンジェルナンバーの意味",
+      subtitle: "あなたが見る数字に込められたメッセージを解読",
+      popularNumbers: "人気のエンジェルナンバー",
+      allNumbers: "すべてのエンジェルナンバー",
+      birthFlowers: "🌸 誕生花",
+      birthStones: "💎 誕生石",
+      zodiacSigns: "✨ 星座",
+      dreamCta: "夢占い",
+      dreamCtaDesc: "この数字を夢で見ましたか？その意味を発見しましょう",
+    },
+    nav: {
+      home: "← ホーム",
+      privacy: "プライバシーポリシー",
+      terms: "利用規約",
+      contact: "お問い合わせ",
+    },
+    footer: {
+      copyright: "© 2026 Decode Number",
+    },
+  },
+  ko: {
+    home: {
+      title: "엔젤넘버 의미",
+      subtitle: "당신이 보는 숫자에 담긴 메시지를 해독하세요",
+      popularNumbers: "인기 엔젤넘버",
+      allNumbers: "모든 엔젤넘버",
+      birthFlowers: "🌸 탄생화",
+      birthStones: "💎 탄생석",
+      zodiacSigns: "✨ 별자리",
+      dreamCta: "꿈해몽",
+      dreamCtaDesc: "이 숫자를 꿈에서 봤나요? 그 의미를 알아보세요",
+    },
+    nav: {
+      home: "← 홈",
+      privacy: "개인정보처리방침",
+      terms: "이용약관",
+      contact: "문의",
+    },
+    footer: {
+      copyright: "© 2026 Decode Number",
+    },
+  },
+  es: {
+    home: {
+      title: "Significado de Números de Ángeles",
+      subtitle: "Descifra los mensajes detrás de los números que ves",
+      popularNumbers: "Números de Ángeles Populares",
+      allNumbers: "Todos los Números de Ángeles",
+      birthFlowers: "🌸 Flores de Nacimiento",
+      birthStones: "💎 Piedras de Nacimiento",
+      zodiacSigns: "✨ Signos del Zodiaco",
+      dreamCta: "Significados de Sueños",
+      dreamCtaDesc: "¿Viste este número en un sueño? Descubre su significado",
+    },
+    nav: {
+      home: "← Inicio",
+      privacy: "Política de Privacidad",
+      terms: "Términos de Servicio",
+      contact: "Contacto",
+    },
+    footer: {
+      copyright: "© 2026 Decode Number",
+    },
+  },
+  "zh-hant": {
+    home: {
+      title: "天使數字含義",
+      subtitle: "解讀你所看到的數字背後的訊息",
+      popularNumbers: "熱門天使數字",
+      allNumbers: "所有天使數字",
+      birthFlowers: "🌸 生日花",
+      birthStones: "💎 生日石",
+      zodiacSigns: "✨ 星座",
+      dreamCta: "夢境解析",
+      dreamCtaDesc: "在夢中看到這個數字？發現它的含義",
+    },
+    nav: {
+      home: "← 首頁",
+      privacy: "隱私政策",
+      terms: "服務條款",
+      contact: "聯繫我們",
+    },
+    footer: {
+      copyright: "© 2026 Decode Number",
+    },
+  },
+};
+
+export function getDictionary(locale: Locale): Dictionary {
+  return dictionaries[locale] || dictionaries.en;
+}

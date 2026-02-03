@@ -1,3 +1,9 @@
+---
+title: "October Birthstone: Opal"
+description: "Discover the meaning and properties of Opal, the birthstone for October."
+slug: "october"
+---
+
 # October Birthstone: Opal
 
 > **Quick Insight:** Opal, the birthstone for October, has been treasured for centuries as a symbol of **hope, creativity, and innocence**. Discover its rich history, spiritual significance, and how it connects to your birth month.

@@ -1,3 +1,9 @@
+---
+title: "January Birthstone: Garnet"
+description: "Discover the meaning and properties of Garnet, the birthstone for January."
+slug: "january"
+---
+
 # January Birthstone: Garnet
 
 > **Quick Insight:** Garnet, the birthstone for January, has been treasured for centuries as a symbol of **Protection, Strength, and Vitality**. Discover its rich history, spiritual significance, and how it connects to your birth month.

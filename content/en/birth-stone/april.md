@@ -1,3 +1,9 @@
+---
+title: "April Birthstone: Diamond"
+description: "Discover the meaning and properties of Diamond, the birthstone for April."
+slug: "april"
+---
+
 # April Birthstone: Diamond
 
 > **Quick Insight:** Diamond, the birthstone for April, has been treasured for centuries as a symbol of **invincibility, clarity, and eternal love**. Discover its rich history, spiritual significance, and how it connects to your birth month.

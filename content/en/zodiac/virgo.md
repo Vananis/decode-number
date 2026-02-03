@@ -1,3 +1,9 @@
+---
+title: "Virgo: The Virgin"
+description: "Discover the personality traits, compatibility, and life path of Virgo zodiac sign."
+slug: "virgo"
+---
+
 # Virgo: The Virgin
 
 > **Quick Insight:** Virgo (August 23 - September 22) is an Earth sign ruled by Mercury, known for **analytical precision and devoted service**. Discover the depths of this sign's personality, relationships, and life path.

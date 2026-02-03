@@ -1,3 +1,9 @@
+---
+title: "March Birth Flower: Daffodil"
+description: "Discover the meaning and symbolism of Daffodil, the birth flower for March."
+slug: "march"
+---
+
 # March Birth Flower: Daffodil
 
 > **Quick Insight:** Daffodil represents those born in March, symbolizing **new beginnings, rebirth, and hope**. Discover how this cheerful trumpet-shaped flower reflects personality traits of optimism, resilience, and the courage to embrace fresh starts.

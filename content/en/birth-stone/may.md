@@ -1,3 +1,9 @@
+---
+title: "May Birthstone: Emerald"
+description: "Discover the meaning and properties of Emerald, the birthstone for May."
+slug: "may"
+---
+
 # May Birthstone: Emerald
 
 > **Quick Insight:** Emerald, the birthstone for May, has been treasured for centuries as a symbol of **rebirth, love, and wisdom**. Discover its rich history, spiritual significance, and how it connects to your birth month.

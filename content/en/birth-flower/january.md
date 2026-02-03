@@ -1,3 +1,9 @@
+---
+title: "January Birth Flower: Carnation"
+description: "Discover the meaning and symbolism of Carnation, the birth flower for January."
+slug: "january"
+---
+
 # January Birth Flower: Carnation
 
 > **Quick Insight:** Carnation represents those born in January, symbolizing **Love, Fascination, and Distinction**. Discover how this flower's layered petals and enduring fragrance reflect personality traits, emotional patterns, and hidden strengths that may resonate with your January soul.

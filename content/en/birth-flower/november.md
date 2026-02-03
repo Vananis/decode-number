@@ -1,3 +1,9 @@
+---
+title: "November Birth Flower: Chrysanthemum"
+description: "Discover the meaning and symbolism of Chrysanthemum, the birth flower for November."
+slug: "november"
+---
+
 # November Birth Flower: Chrysanthemum
 
 > **Quick Insight:** Chrysanthemum represents those born in November, symbolizing **longevity, joy, and optimism**. Discover how this resilient autumn bloom's unique characteristics reflect personality traits, emotional patterns, and hidden strengths that may resonate with late-autumn souls.
