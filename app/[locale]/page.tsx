@@ -159,15 +159,21 @@ export default async function Home({ params }: Props) {
               {dict.home.birthFlowers}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-              {birthFlowers.map((flower) => (
-                <Link
-                  key={flower.slug}
-                  href={`/${locale}/birth-flower/${flower.slug}`}
-                  className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
-                >
-                  <span className="text-sm font-medium text-pink-800">{flower.title}</span>
-                </Link>
-              ))}
+              {birthFlowers.map((flower) => {
+                const parts = flower.title.split(": ");
+                const subtitle = parts[0] || "";
+                const name = parts[1] || flower.title;
+                return (
+                  <Link
+                    key={flower.slug}
+                    href={`/${locale}/birth-flower/${flower.slug}`}
+                    className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
+                  >
+                    <span className="block text-xs text-pink-600 mb-1">{subtitle}</span>
+                    <span className="block text-sm font-semibold text-pink-900">{name}</span>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         )}
@@ -178,16 +184,22 @@ export default async function Home({ params }: Props) {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               {dict.home.birthStones}
             </h2>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {birthStones.map((stone) => (
-                <Link
-                  key={stone.slug}
-                  href={`/${locale}/birth-stone/${stone.slug}`}
-                  className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
-                >
-                  <span className="text-sm font-medium text-amber-800">{stone.title}</span>
-                </Link>
-              ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {birthStones.map((stone) => {
+                const parts = stone.title.split(": ");
+                const subtitle = parts[0] || "";
+                const name = parts[1] || stone.title;
+                return (
+                  <Link
+                    key={stone.slug}
+                    href={`/${locale}/birth-stone/${stone.slug}`}
+                    className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
+                  >
+                    <span className="block text-xs text-amber-600 mb-1">{subtitle}</span>
+                    <span className="block text-sm font-semibold text-amber-900">{name}</span>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         )}
@@ -199,15 +211,21 @@ export default async function Home({ params }: Props) {
               {dict.home.zodiacSigns}
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {zodiacItems.map((zodiac) => (
-                <Link
-                  key={zodiac.slug}
-                  href={`/${locale}/zodiac/${zodiac.slug}`}
-                  className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
-                >
-                  <span className="text-sm font-medium text-purple-800">{zodiac.title}</span>
-                </Link>
-              ))}
+              {zodiacItems.map((zodiac) => {
+                const parts = zodiac.title.split(": ");
+                const subtitle = parts[0] || "";
+                const name = parts[1] || zodiac.title;
+                return (
+                  <Link
+                    key={zodiac.slug}
+                    href={`/${locale}/zodiac/${zodiac.slug}`}
+                    className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
+                  >
+                    <span className="block text-xs text-purple-600 mb-1">{subtitle}</span>
+                    <span className="block text-sm font-semibold text-purple-900">{name}</span>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         )}
