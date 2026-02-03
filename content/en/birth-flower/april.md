@@ -8,7 +8,6 @@ slug: "april"
 
 > **Quick Insight:** Daisy represents those born in April, symbolizing **innocence, purity, and new beginnings**. Discover how this cheerful flower's radiant simplicity reflects personality traits, emotional patterns, and hidden strengths that may resonate with April-born individuals.
 
-![Daisy - April birth flower illustration](/images/birth-flower/april.webp)
 
 ---
 

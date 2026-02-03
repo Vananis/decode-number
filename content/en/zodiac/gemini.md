@@ -8,7 +8,6 @@ slug: "gemini"
 
 > **Quick Insight:** Gemini (May 21 - June 20) is an Air sign ruled by Mercury, known for **intellectual curiosity and versatile communication**. Discover the depths of this sign's personality, relationships, and life path.
 
-![Gemini zodiac symbol illustration](/images/zodiac/gemini.webp)
 
 ---
 

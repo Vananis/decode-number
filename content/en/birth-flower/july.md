@@ -8,7 +8,6 @@ slug: "july"
 
 > **Quick Insight:** Larkspur represents those born in July, symbolizing **lightness, levity, and a pure heart**. Discover how this flower's towering spires and delicate blooms reflect personality traits of openness, joy, and sincere devotion.
 
-![Larkspur - July birth flower illustration](/images/birth-flower/july.webp)
 
 ---
 

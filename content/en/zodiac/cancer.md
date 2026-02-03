@@ -8,7 +8,6 @@ slug: "cancer"
 
 > **Quick Insight:** Cancer (June 21 - July 22) is a Water sign ruled by the Moon, known for **profound emotional depth and nurturing devotion**. Discover the depths of this sign's personality, relationships, and life path.
 
-![Cancer zodiac symbol illustration](/images/zodiac/cancer.webp)
 
 ---
 

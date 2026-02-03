@@ -8,7 +8,6 @@ slug: "pisces"
 
 > **Quick Insight:** Pisces (February 19 - March 20) is a Water sign ruled by Neptune and Jupiter, known for **profound intuition and boundless compassion**. Discover the depths of this sign's personality, relationships, and life path.
 
-![Pisces zodiac symbol illustration](/images/zodiac/pisces.webp)
 
 ---
 

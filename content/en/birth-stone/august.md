@@ -8,7 +8,6 @@ slug: "august"
 
 > **Quick Insight:** Peridot, the birthstone for August, has been treasured for centuries as a symbol of **strength, protection, and healing**. Discover its rich history, spiritual significance, and how it connects to your birth month.
 
-![Peridot - August birthstone illustration](/images/birthstone/august.webp)
 
 ---
 

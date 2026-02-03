@@ -8,7 +8,6 @@ slug: "leo"
 
 > **Quick Insight:** Leo (July 23 - August 22) is a Fire sign ruled by the Sun, known for **radiant confidence and generous warmth**. Discover the depths of this sign's personality, relationships, and life path.
 
-![Leo zodiac symbol illustration](/images/zodiac/leo.webp)
 
 ---
 

@@ -8,7 +8,6 @@ slug: "taurus"
 
 > **Quick Insight:** Taurus (April 20 - May 20) is an Earth sign ruled by Venus, known for **unwavering determination and sensual appreciation of life's pleasures**. Discover the depths of this sign's personality, relationships, and life path.
 
-![Taurus zodiac symbol illustration](/images/zodiac/taurus.webp)
 
 ---
 

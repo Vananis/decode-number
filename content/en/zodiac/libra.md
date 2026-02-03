@@ -8,7 +8,6 @@ slug: "libra"
 
 > **Quick Insight:** Libra (September 23 - October 22) is an Air sign ruled by Venus, known for **seeking harmony, balance, and beauty in all things**. Discover the depths of this sign's personality, relationships, and life path.
 
-![Libra zodiac symbol illustration](/images/zodiac/libra.webp)
 
 ---
 
