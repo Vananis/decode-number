@@ -66,6 +66,42 @@ export default async function Home({ params }: Props) {
     })
   );
 
+  // Load birth flowers with frontmatter
+  const birthFlowers = hasFullContent ? await Promise.all(
+    months.map(async (month) => {
+      try {
+        const { frontmatter } = await readMarkdownFile(month, locale, 'birth-flower');
+        return { slug: month, title: frontmatter.title || month };
+      } catch {
+        return { slug: month, title: month };
+      }
+    })
+  ) : [];
+
+  // Load birth stones with frontmatter
+  const birthStones = hasFullContent ? await Promise.all(
+    months.map(async (month) => {
+      try {
+        const { frontmatter } = await readMarkdownFile(month, locale, 'birth-stone');
+        return { slug: month, title: frontmatter.title || month };
+      } catch {
+        return { slug: month, title: month };
+      }
+    })
+  ) : [];
+
+  // Load zodiac signs with frontmatter
+  const zodiacItems = hasFullContent ? await Promise.all(
+    zodiacSigns.map(async (sign) => {
+      try {
+        const { frontmatter } = await readMarkdownFile(sign, locale, 'zodiac');
+        return { slug: sign, title: frontmatter.title || sign };
+      } catch {
+        return { slug: sign, title: sign };
+      }
+    })
+  ) : [];
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <div className="max-w-5xl mx-auto px-4 py-16">
@@ -122,14 +158,14 @@ export default async function Home({ params }: Props) {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               {dict.home.birthFlowers}
             </h2>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {months.map((month) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {birthFlowers.map((flower) => (
                 <Link
-                  key={month}
-                  href={`/${locale}/birth-flower/${month}`}
+                  key={flower.slug}
+                  href={`/${locale}/birth-flower/${flower.slug}`}
                   className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
                 >
-                  <span className="text-sm font-medium text-pink-800 capitalize">{month}</span>
+                  <span className="text-sm font-medium text-pink-800">{flower.title}</span>
                 </Link>
               ))}
             </div>
@@ -143,13 +179,13 @@ export default async function Home({ params }: Props) {
               {dict.home.birthStones}
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {months.map((month) => (
+              {birthStones.map((stone) => (
                 <Link
-                  key={month}
-                  href={`/${locale}/birth-stone/${month}`}
+                  key={stone.slug}
+                  href={`/${locale}/birth-stone/${stone.slug}`}
                   className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
                 >
-                  <span className="text-sm font-medium text-amber-800 capitalize">{month}</span>
+                  <span className="text-sm font-medium text-amber-800">{stone.title}</span>
                 </Link>
               ))}
             </div>
@@ -163,13 +199,13 @@ export default async function Home({ params }: Props) {
               {dict.home.zodiacSigns}
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {zodiacSigns.map((sign) => (
+              {zodiacItems.map((zodiac) => (
                 <Link
-                  key={sign}
-                  href={`/${locale}/zodiac/${sign}`}
+                  key={zodiac.slug}
+                  href={`/${locale}/zodiac/${zodiac.slug}`}
                   className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
                 >
-                  <span className="text-sm font-medium text-purple-800 capitalize">{sign}</span>
+                  <span className="text-sm font-medium text-purple-800">{zodiac.title}</span>
                 </Link>
               ))}
             </div>
