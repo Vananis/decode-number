@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter, Cinzel } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 
 const inter = Inter({
@@ -23,33 +22,13 @@ export const metadata: Metadata = {
   keywords: ["angel numbers", "numerology", "111 meaning", "222 meaning", "333 meaning", "spiritual numbers"],
 };
 
-function getLangFromPathname(pathname: string): string {
-  const langMap: Record<string, string> = {
-    en: "en",
-    ko: "ko",
-    ja: "ja",
-    es: "es",
-    "zh-hant": "zh-Hant",
-  };
-  const match = pathname.match(/^\/([a-z]{2}(-hant)?)(?:\/|$)/i);
-  if (match) {
-    const locale = match[1].toLowerCase();
-    return langMap[locale] || "en";
-  }
-  return "en";
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = await headers();
-  const pathname = headersList.get("x-pathname") || "/";
-  const lang = getLangFromPathname(pathname);
-
   return (
-    <html lang={lang}>
+    <>
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-NKLT6GH13Z"
@@ -72,6 +51,6 @@ export default async function RootLayout({
       <body className={`${inter.variable} ${cinzel.variable} font-sans antialiased`}>
         {children}
       </body>
-    </html>
+    </>
   );
 }
