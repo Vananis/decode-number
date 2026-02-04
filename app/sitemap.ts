@@ -1,4 +1,6 @@
 import { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 import { getAllSlugs } from "@/lib/markdown";
 
 type Locale = "en" | "es" | "ja" | "ko" | "zh-hant";

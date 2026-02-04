@@ -7,6 +7,9 @@ type Props = {
   params: Promise<{ locale: Locale }>;
 };
 
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }

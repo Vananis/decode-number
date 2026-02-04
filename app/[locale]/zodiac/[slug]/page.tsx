@@ -10,6 +10,9 @@ type Props = {
   params: Promise<{ locale: Locale; slug: string }>;
 };
 
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const params: { locale: Locale; slug: string }[] = [];
   for (const locale of supportedLocales) {
