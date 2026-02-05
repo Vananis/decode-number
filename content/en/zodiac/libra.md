@@ -278,6 +278,12 @@ Libra often thrives in roles involving mediation, aesthetics, and partnership, s
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Libra](https://read-star.com/en/libra)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Virgo](/zodiac/virgo)
@@ -288,6 +294,3 @@ Libra often thrives in roles involving mediation, aesthetics, and partnership, s
 - [October Birth Flower: Marigold](/birth-flower/october)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: 2026-01-31*

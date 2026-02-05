@@ -287,6 +287,12 @@ Gemini often thrives in roles involving communication and variety, such as media
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Gemini](https://read-star.com/en/gemini)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Taurus](/zodiac/taurus)
@@ -295,6 +301,3 @@ Gemini often thrives in roles involving communication and variety, such as media
 - [June Birth Flower](/birth-flower/june)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: 2026-01-31*

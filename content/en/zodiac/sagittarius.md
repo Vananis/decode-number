@@ -278,6 +278,12 @@ Sagittarius often thrives in roles involving education, travel, publishing, and 
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Sagittarius](https://read-star.com/en/sagittarius)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Scorpio](/zodiac/scorpio)
@@ -288,6 +294,3 @@ Sagittarius often thrives in roles involving education, travel, publishing, and 
 - [December Birth Flower](/birth-flower/december)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: January 31, 2026*

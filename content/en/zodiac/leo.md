@@ -280,6 +280,12 @@ Leo often thrives in roles involving creative expression and leadership, such as
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Leo](https://read-star.com/en/leo)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Cancer](/zodiac/cancer)
@@ -290,6 +296,3 @@ Leo often thrives in roles involving creative expression and leadership, such as
 - [August Birth Flower](/birth-flower/august)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: 2026-01-31*

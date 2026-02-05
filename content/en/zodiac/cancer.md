@@ -278,6 +278,12 @@ Cancer often thrives in roles involving caregiving, nurturing, and creating secu
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Cancer](https://read-star.com/en/cancer)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Gemini](/zodiac/gemini)
@@ -288,6 +294,3 @@ Cancer often thrives in roles involving caregiving, nurturing, and creating secu
 - [July Birth Flower: Larkspur](/birth-flower/july)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: January 2025*

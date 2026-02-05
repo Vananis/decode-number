@@ -294,6 +294,12 @@ Pisces often thrives in roles involving creativity, healing, or spiritual servic
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Pisces](https://read-star.com/en/pisces)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Aquarius](/zodiac/aquarius)
@@ -304,6 +310,3 @@ Pisces often thrives in roles involving creativity, healing, or spiritual servic
 - [March Birth Flower](/birth-flower/march)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: January 31, 2026*

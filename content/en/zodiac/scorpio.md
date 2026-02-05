@@ -292,6 +292,12 @@ Scorpio often thrives in roles involving investigation and research, psychology 
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Scorpio](https://read-star.com/en/scorpio)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Libra](/zodiac/libra)
@@ -302,6 +308,3 @@ Scorpio often thrives in roles involving investigation and research, psychology 
 - [November Birth Flower](/birth-flower/november)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: January 31, 2026*

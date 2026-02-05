@@ -299,6 +299,12 @@ Virgo often thrives in roles involving analysis, service, and attention to detai
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Virgo](https://read-star.com/en/virgo)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Leo](/zodiac/leo)
@@ -307,6 +313,3 @@ Virgo often thrives in roles involving analysis, service, and attention to detai
 - [September Birth Flower](/birth-flower/september)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: January 2026*

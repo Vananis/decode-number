@@ -290,6 +290,12 @@ Aquarius often thrives in roles involving innovation and future-thinking, such a
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Aquarius](https://read-star.com/en/aquarius)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Capricorn](/zodiac/capricorn)
@@ -300,6 +306,3 @@ Aquarius often thrives in roles involving innovation and future-thinking, such a
 - [February Birth Flower: Violet](/birth-flower/february)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: January 2025*

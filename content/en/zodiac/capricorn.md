@@ -279,6 +279,12 @@ Capricorn often thrives in roles involving leadership and long-term strategy, su
 
 ---
 
+## Related Site
+
+→ [Deep Psychological Analysis: Capricorn](https://read-star.com/en/capricorn)
+
+---
+
 ## Related Content
 
 - [Previous Sign: Sagittarius](/zodiac/sagittarius)
@@ -287,6 +293,3 @@ Capricorn often thrives in roles involving leadership and long-term strategy, su
 - [January Birth Flower](/birth-flower/january)
 - [All Zodiac Signs](/zodiac)
 
----
-
-*Last updated: 2026-01-31*
