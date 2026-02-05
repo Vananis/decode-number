@@ -1,13 +1,16 @@
-const LOCALES = ["en", "ko", "ja", "es", "zh-hant"] as const;
-const BASE_URL = "https://decode-number.com";
+import { Locale, locales } from "@/lib/markdown"
 
-export function generatePageAlternates(path: string = "") {
+const BASE_URL = "https://decode-number.com"
+
+export function generatePageAlternates(locale: Locale, path: string = "") {
+  const url = `${BASE_URL}/${locale}${path}`
   return {
+    canonical: url,
     languages: Object.fromEntries(
-      LOCALES.map((locale) => [
-        locale === "zh-hant" ? "zh-Hant" : locale,
-        `${BASE_URL}/${locale}${path}`
+      locales.map((l) => [
+        l === "zh-hant" ? "zh-Hant" : l,
+        `${BASE_URL}/${l}${path}`
       ])
     ),
-  };
+  }
 }

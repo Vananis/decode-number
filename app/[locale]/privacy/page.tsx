@@ -15,11 +15,14 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: "Privacy Policy - Decode Number",
-  description: "Privacy Policy for Decode Number",
-  alternates: generatePageAlternates("/privacy"),
-};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: "Privacy Policy - Decode Number",
+    description: "Privacy Policy for Decode Number",
+    alternates: generatePageAlternates(locale, "/privacy"),
+  };
+}
 
 export default async function PrivacyPage({ params }: Props) {
   const { locale } = await params;

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: dict.home.title,
     description: dict.home.subtitle,
-    alternates: generatePageAlternates(),
+    alternates: generatePageAlternates(locale, ""),
   };
 }
 
