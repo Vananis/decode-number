@@ -70,7 +70,7 @@ export default async function AngelNumberPage({ params }: Props) {
         </article>
 
         <a
-          href="https://tell-dream.com"
+          href={`https://tell-dream.com/${locale}`}
           className="aurora-border group block mt-16 p-6 transition-transform hover:scale-[1.01]"
         >
           <div className="flex items-center gap-8">

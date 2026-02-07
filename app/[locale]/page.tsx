@@ -234,7 +234,7 @@ export default async function Home({ params }: Props) {
         )}
 
         <Link
-          href="https://tell-dream.com"
+          href={`https://tell-dream.com/${locale}`}
           className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
         >
           <span className="text-3xl mb-2 block">🌙</span>
