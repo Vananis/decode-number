@@ -3,10 +3,10 @@ import { MetadataRoute } from "next";
 export const dynamic = "force-static";
 import { getAllSlugs } from "@/lib/markdown";
 
-type Locale = "en" | "es" | "ja" | "ko" | "zh-hant";
+type Locale = "en" | "es" | "ja" | "ko" | "zh-hant" | "de";
 type ContentType = "number" | "birth-flower" | "birth-stone" | "zodiac";
 
-const locales: Locale[] = ["en", "es", "ja", "ko", "zh-hant"];
+const locales: Locale[] = ["en", "es", "ja", "ko", "zh-hant", "de"];
 const contentTypes: ContentType[] = ["number", "birth-flower", "birth-stone", "zodiac"];
 
 export default function sitemap(): MetadataRoute.Sitemap {

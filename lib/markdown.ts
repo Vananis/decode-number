@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
-export const locales = ['en', 'es', 'ja', 'ko', 'zh-hant'] as const;
+export const locales = ['en', 'es', 'ja', 'ko', 'zh-hant', 'de'] as const;
 export type Locale = (typeof locales)[number];
 type ContentType = 'number' | 'birth-flower' | 'birth-stone' | 'zodiac';
 
@@ -43,7 +43,7 @@ export async function readMarkdownFile(slug: string, locale: Locale = 'en', cont
 }
 
 export function getAlternateLanguages(slug: string, contentType: ContentType = 'number'): { locale: Locale; url: string }[] {
-  const locales: Locale[] = ['en', 'es', 'ja', 'ko', 'zh-hant'];
+  const locales: Locale[] = ['en', 'es', 'ja', 'ko', 'zh-hant', 'de'];
   const alternates: { locale: Locale; url: string }[] = [];
   
   for (const locale of locales) {

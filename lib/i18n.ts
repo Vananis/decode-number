@@ -134,6 +134,28 @@ const dictionaries: Record<Locale, Dictionary> = {
       copyright: "© 2026 Decode Number",
     },
   },
+  de: {
+    home: {
+      title: "Engelzahlen Bedeutungen",
+      subtitle: "Entschlüsseln Sie die Botschaften hinter den Zahlen, die Sie sehen",
+      popularNumbers: "Beliebte Engelzahlen",
+      allNumbers: "Alle Engelzahlen",
+      birthFlowers: "🌸 Geburtsblumen",
+      birthStones: "💎 Geburtssteine",
+      zodiacSigns: "✨ Sternzeichen",
+      dreamCta: "Traumdeutung",
+      dreamCtaDesc: "Haben Sie diese Zahl im Traum gesehen? Entdecken Sie ihre Bedeutung",
+    },
+    nav: {
+      home: "← Startseite",
+      privacy: "Datenschutz",
+      terms: "Nutzungsbedingungen",
+      contact: "Kontakt",
+    },
+    footer: {
+      copyright: "© 2026 Decode Number",
+    },
+  },
 };
 
 export function getDictionary(locale: Locale): Dictionary {
