@@ -58,7 +58,7 @@ export default async function AngelNumberPage({ params }: Props) {
   const [contentBeforeCTA, contentAfterCTA] = splitContentAfterCoreMeanings(angelNumber.content);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
+    <main className="min-h-screen bg-white">
       <div className="max-w-3xl mx-auto px-4 py-16">
         <nav className="mb-8">
           <Link href={`/${locale}`} className="text-indigo-600 hover:text-indigo-800">
