@@ -17,6 +17,7 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Contact - Decode Number",
   description: "Contact Decode Number",
+  robots: { index: false, follow: true },
 };
 
 export default async function ContactPage({ params }: Props) {

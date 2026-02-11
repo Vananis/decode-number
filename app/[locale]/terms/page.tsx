@@ -17,6 +17,7 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Terms of Service - Decode Number",
   description: "Terms of Service for Decode Number",
+  robots: { index: false, follow: true },
 };
 
 export default async function TermsPage({ params }: Props) {

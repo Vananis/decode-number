@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Privacy Policy - Decode Number",
     description: "Privacy Policy for Decode Number",
     alternates: generatePageAlternates(locale, "/privacy"),
+    robots: { index: false, follow: true },
   };
 }
 
