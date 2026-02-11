@@ -13,13 +13,14 @@ type Dictionary = {
     dreamCtaDesc: string;
   };
   cta: {
-    heading: string;
     description: string;
     tarotLink: string;
     horoscopeLink: string;
+    dreamLink: string;
     footerPrefix: string;
-    footerHoroscope: string;
     footerTarot: string;
+    footerHoroscope: string;
+    footerDream: string;
   };
   nav: {
     home: string;
@@ -46,13 +47,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "Saw this number in a dream? Discover what it means",
     },
     cta: {
-      heading: "Explore This Message Further",
-      description: "Angel numbers often appear when we need guidance. If you'd like to explore this message more deeply:",
+      description: "Angel numbers often appear when we need guidance. If you saw this number in a dream, it may carry deeper meaning:",
       tarotLink: "Draw Tarot Cards",
       horoscopeLink: "Daily Horoscope",
+      dreamLink: "Dream Interpretation",
       footerPrefix: "Explore more:",
-      footerHoroscope: "Daily Horoscope",
-      footerTarot: "Draw Tarot Cards",
+      footerTarot: "Tarot",
+      footerHoroscope: "Horoscope",
+      footerDream: "Dreams",
     },
     nav: {
       home: "← Home",
@@ -77,13 +79,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "この数字を夢で見ましたか？その意味を発見しましょう",
     },
     cta: {
-      heading: "このメッセージをさらに深く探る",
-      description: "エンジェルナンバーは導きが必要なときに現れることがあります。このメッセージをより深く探りたい場合は：",
+      description: "エンジェルナンバーは導きが必要なときに現れることがあります。夢でこの数字を見た場合、より深い意味があるかもしれません：",
       tarotLink: "タロットカードを引く",
       horoscopeLink: "今日の運勢",
+      dreamLink: "夢占い",
       footerPrefix: "もっと知りたいですか？",
-      footerHoroscope: "今日の運勢",
-      footerTarot: "タロットを引く",
+      footerTarot: "タロット",
+      footerHoroscope: "運勢",
+      footerDream: "夢占い",
     },
     nav: {
       home: "← ホーム",
@@ -108,13 +111,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "이 숫자를 꿈에서 봤나요? 그 의미를 알아보세요",
     },
     cta: {
-      heading: "이 메시지를 더 깊이 탐구하기",
-      description: "엔젤넘버는 우리에게 안내가 필요할 때 나타나기도 합니다. 이 메시지를 더 깊이 탐구하고 싶다면：",
+      description: "엔젤넘버는 우리에게 안내가 필요할 때 나타나기도 합니다. 꿈에서 이 숫자를 봤다면 더 깊은 의미가 있을 수 있습니다：",
       tarotLink: "타로 카드 뽑기",
       horoscopeLink: "오늘의 운세",
+      dreamLink: "꿈해몽",
       footerPrefix: "더 확인하고 싶다면",
-      footerHoroscope: "오늘의 운세",
-      footerTarot: "타로 카드 뽑기",
+      footerTarot: "타로",
+      footerHoroscope: "운세",
+      footerDream: "꿈해몽",
     },
     nav: {
       home: "← 홈",
@@ -139,13 +143,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "¿Viste este número en un sueño? Descubre su significado",
     },
     cta: {
-      heading: "Explora este mensaje más a fondo",
-      description: "Los números de ángeles a menudo aparecen cuando necesitamos orientación. Si deseas explorar este mensaje más profundamente:",
+      description: "Los números de ángeles a menudo aparecen cuando necesitamos orientación. Si viste este número en un sueño, puede tener un significado más profundo:",
       tarotLink: "Saca Cartas del Tarot",
       horoscopeLink: "Horóscopo de Hoy",
+      dreamLink: "Interpretación de Sueños",
       footerPrefix: "¿Quieres explorar más?",
-      footerHoroscope: "Horóscopo de Hoy",
-      footerTarot: "Sacar Cartas del Tarot",
+      footerTarot: "Tarot",
+      footerHoroscope: "Horóscopo",
+      footerDream: "Sueños",
     },
     nav: {
       home: "← Inicio",
@@ -170,13 +175,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "在夢中看到這個數字？發現它的含義",
     },
     cta: {
-      heading: "深入探索這個訊息",
-      description: "天使數字常常在我們需要指引時出現。如果你想更深入地探索這個訊息：",
+      description: "天使數字常常在我們需要指引時出現。如果你在夢中看到這個數字，可能有更深的含義：",
       tarotLink: "抽塔羅牌",
       horoscopeLink: "今日運勢",
+      dreamLink: "夢境解析",
       footerPrefix: "想了解更多嗎？",
-      footerHoroscope: "今日運勢",
-      footerTarot: "抽塔羅牌",
+      footerTarot: "塔羅",
+      footerHoroscope: "運勢",
+      footerDream: "夢境",
     },
     nav: {
       home: "← 首頁",
@@ -201,13 +207,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "Haben Sie diese Zahl im Traum gesehen? Entdecken Sie ihre Bedeutung",
     },
     cta: {
-      heading: "Erkunde diese Botschaft weiter",
-      description: "Engelzahlen erscheinen oft, wenn wir Führung brauchen. Wenn du diese Botschaft tiefer erkunden möchtest:",
+      description: "Engelzahlen erscheinen oft, wenn wir Führung brauchen. Wenn du diese Zahl im Traum gesehen hast, könnte sie eine tiefere Bedeutung haben:",
       tarotLink: "Tarotkarten ziehen",
       horoscopeLink: "Tageshoroskop",
+      dreamLink: "Traumdeutung",
       footerPrefix: "Mehr erfahren?",
-      footerHoroscope: "Tageshoroskop",
-      footerTarot: "Tarotkarten ziehen",
+      footerTarot: "Tarot",
+      footerHoroscope: "Horoskop",
+      footerDream: "Träume",
     },
     nav: {
       home: "← Startseite",

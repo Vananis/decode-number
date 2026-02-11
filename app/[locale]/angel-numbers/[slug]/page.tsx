@@ -90,12 +90,19 @@ export default async function AngelNumberPage({ params }: Props) {
           >
             {dict.cta.footerHoroscope}
           </a>
-          {" · "}
+          <span className="mx-3 text-gray-400">|</span>
           <a
             href={`https://read-tarot.com/${locale}/draw`}
             className="text-indigo-600 hover:underline"
           >
             {dict.cta.footerTarot}
+          </a>
+          <span className="mx-3 text-gray-400">|</span>
+          <a
+            href={`https://tell-dream.com/${locale}`}
+            className="text-indigo-600 hover:underline"
+          >
+            {dict.cta.footerDream}
           </a>
         </p>
       </div>
