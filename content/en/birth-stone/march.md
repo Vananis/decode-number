@@ -248,4 +248,3 @@ Aquamarine is traditionally associated with courage, serenity, and clear communi
 
 ---
 
-*Last updated: January 2026*

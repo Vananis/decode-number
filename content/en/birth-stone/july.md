@@ -251,4 +251,3 @@ Ruby is traditionally associated with life force energy, passion, courage, and p
 
 ---
 
-*Last updated: January 2026*

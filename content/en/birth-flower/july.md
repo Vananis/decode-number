@@ -219,4 +219,3 @@ Consider growing larkspur in your garden or keeping fresh or dried arrangements 
 
 ---
 
-*Last updated: 2026-01-31*

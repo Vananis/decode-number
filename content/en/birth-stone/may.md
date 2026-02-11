@@ -249,4 +249,3 @@ Emerald is traditionally associated with rebirth, love, and wisdom. In spiritual
 
 ---
 
-*Last updated: January 31, 2026*

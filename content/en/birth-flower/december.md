@@ -218,4 +218,3 @@ Consider displaying poinsettias in your home during winter months, choosing jewe
 
 ---
 
-*Last updated: January 2026*

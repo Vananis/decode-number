@@ -222,4 +222,3 @@ Consider growing gladiolus in your garden for a personal connection to your birt
 
 ---
 
-*Last updated: January 2026*

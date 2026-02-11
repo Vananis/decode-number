@@ -254,4 +254,3 @@ Pearl is traditionally associated with purity, innocence, and integrity. It is b
 
 ---
 
-*Last updated: January 2026*

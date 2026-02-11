@@ -229,4 +229,3 @@ Consider growing asters in your garden for autumn color, wearing aster-inspired 
 
 ---
 
-*Last updated: January 2025*

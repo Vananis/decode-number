@@ -224,4 +224,3 @@ Consider keeping fresh or dried roses in your living space, using rose-scented p
 
 ---
 
-*Last updated: 2026-01-31*

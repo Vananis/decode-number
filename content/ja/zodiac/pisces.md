@@ -306,4 +306,3 @@ Astrological tradition は、各 sign には evolutionary な purpose がある�
 
 ---
 
-*最終更新：2026年2月3日*

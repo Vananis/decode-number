@@ -246,4 +246,3 @@ Diamond is traditionally associated with invincibility, clarity, and eternal lov
 
 ---
 
-*Last updated: January 2026*

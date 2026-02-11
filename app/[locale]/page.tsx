@@ -170,10 +170,10 @@ export default async function Home({ params }: Props) {
                   <Link
                     key={flower.slug}
                     href={`/${locale}/birth-flower/${flower.slug}`}
-                    className="p-4 bg-pink-50 rounded-xl text-center hover:bg-pink-100 transition-colors"
+                    className="p-4 bg-gray-50 rounded-xl text-center hover:bg-gray-100 transition-colors border border-gray-100"
                   >
-                    <span className="block text-xs text-pink-600 mb-1">{subtitle}</span>
-                    <span className="block text-sm font-semibold text-pink-900">{name}</span>
+                    <span className="block text-xs text-gray-500 mb-1">{subtitle}</span>
+                    <span className="block text-sm font-semibold text-gray-800">{name}</span>
                   </Link>
                 );
               })}
@@ -196,10 +196,10 @@ export default async function Home({ params }: Props) {
                   <Link
                     key={stone.slug}
                     href={`/${locale}/birth-stone/${stone.slug}`}
-                    className="p-4 bg-amber-50 rounded-xl text-center hover:bg-amber-100 transition-colors"
+                    className="p-4 bg-gray-50 rounded-xl text-center hover:bg-gray-100 transition-colors border border-gray-100"
                   >
-                    <span className="block text-xs text-amber-600 mb-1">{subtitle}</span>
-                    <span className="block text-sm font-semibold text-amber-900">{name}</span>
+                    <span className="block text-xs text-gray-500 mb-1">{subtitle}</span>
+                    <span className="block text-sm font-semibold text-gray-800">{name}</span>
                   </Link>
                 );
               })}
@@ -222,29 +222,16 @@ export default async function Home({ params }: Props) {
                   <Link
                     key={zodiac.slug}
                     href={`/${locale}/zodiac/${zodiac.slug}`}
-                    className="p-4 bg-purple-50 rounded-xl text-center hover:bg-purple-100 transition-colors"
+                    className="p-4 bg-gray-50 rounded-xl text-center hover:bg-gray-100 transition-colors border border-gray-100"
                   >
-                    <span className="block text-xs text-purple-600 mb-1">{subtitle}</span>
-                    <span className="block text-sm font-semibold text-purple-900">{name}</span>
+                    <span className="block text-xs text-gray-500 mb-1">{subtitle}</span>
+                    <span className="block text-sm font-semibold text-gray-800">{name}</span>
                   </Link>
                 );
               })}
             </div>
           </section>
         )}
-
-        <Link
-          href={`https://tell-dream.com/${locale}`}
-          className="block p-8 rounded-2xl text-center bg-gradient-to-r from-indigo-100 via-purple-100 to-violet-100 hover:from-indigo-200 hover:via-purple-200 hover:to-violet-200 transition-all shadow-sm hover:shadow-md"
-        >
-          <span className="text-3xl mb-2 block">🌙</span>
-          <span className="text-2xl font-serif font-semibold text-gray-800 tracking-wide">
-            {dict.home.dreamCta}
-          </span>
-          <p className="text-gray-600 mt-2 text-sm">
-            {dict.home.dreamCtaDesc}
-          </p>
-        </Link>
 
         <footer className="mt-12 text-center text-gray-400 text-sm space-y-2">
           <p>{dict.footer.copyright}</p>

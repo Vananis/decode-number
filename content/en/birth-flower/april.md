@@ -215,4 +215,3 @@ Consider growing daisies in your garden or keeping a potted Gerbera daisy indoor
 
 ---
 
-*Last updated: 2026-01-31*

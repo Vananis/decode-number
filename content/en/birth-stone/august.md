@@ -252,4 +252,3 @@ Peridot is traditionally associated with strength, protection, and healing. It's
 
 ---
 
-*Last updated: January 31, 2026*

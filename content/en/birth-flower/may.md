@@ -222,4 +222,3 @@ Consider keeping fresh Lily of the Valley in your home during its blooming seaso
 
 ---
 
-*Last updated: January 31, 2026*

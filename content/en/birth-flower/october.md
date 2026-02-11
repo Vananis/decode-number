@@ -215,4 +215,3 @@ Consider growing marigolds in your garden or in containers for continuous autumn
 
 ---
 
-*Last updated: January 31, 2026*

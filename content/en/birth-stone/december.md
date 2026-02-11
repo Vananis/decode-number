@@ -253,4 +253,3 @@ Turquoise is traditionally associated with protection, healing, and good fortune
 
 ---
 
-*Last updated: January 2025*

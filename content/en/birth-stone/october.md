@@ -242,4 +242,3 @@ Opal is traditionally associated with hope, creativity, and innocence. It is bel
 
 ---
 
-*Last updated: January 2025*

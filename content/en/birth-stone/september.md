@@ -249,4 +249,3 @@ Sapphire is traditionally associated with wisdom, mental clarity, and spiritual 
 
 ---
 
-*Last updated: January 31, 2026*

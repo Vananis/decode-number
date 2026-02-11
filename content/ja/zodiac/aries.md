@@ -298,4 +298,3 @@ together に、これらの birth month associations は emergence、courage、�
 
 ---
 
-*最終更新：2026-02-03*

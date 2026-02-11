@@ -250,4 +250,3 @@ Garnet is traditionally associated with protection, strength, and vitality. It i
 
 ---
 
-*Last updated: 2026-01-31*

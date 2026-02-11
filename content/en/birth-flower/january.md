@@ -206,4 +206,3 @@ Consider growing carnations in your garden or keeping fresh carnations in your h
 
 ---
 
-*Last updated: January 31, 2026*

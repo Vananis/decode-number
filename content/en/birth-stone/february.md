@@ -253,4 +253,3 @@ Amethyst is traditionally associated with peace, clarity, and sobriety. In spiri
 
 ---
 
-*Last updated: January 2026*

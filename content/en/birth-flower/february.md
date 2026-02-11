@@ -229,4 +229,3 @@ Consider growing violets in a shaded garden area or keeping African violets as h
 
 ---
 
-*Last updated: 2026-01-31*

@@ -219,4 +219,3 @@ Consider growing chrysanthemums in your garden or as indoor potted plants, choos
 
 ---
 
-*Last updated: January 2026*

@@ -259,4 +259,3 @@ Topaz is traditionally associated with strength, healing, and abundance. It's be
 
 ---
 
-*Last updated: January 2026*
