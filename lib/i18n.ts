@@ -14,7 +14,8 @@ type Dictionary = {
   };
   cta: {
     heading: string;
-    tarotButton: string;
+    description: string;
+    tarotLink: string;
     horoscopeLink: string;
     footerPrefix: string;
     footerHoroscope: string;
@@ -45,9 +46,10 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "Saw this number in a dream? Discover what it means",
     },
     cta: {
-      heading: "Want to explore this message further?",
-      tarotButton: "Draw Tarot Cards",
-      horoscopeLink: "or check today's cosmic flow",
+      heading: "Explore This Message Further",
+      description: "Angel numbers often appear when we need guidance. If you'd like to explore this message more deeply:",
+      tarotLink: "Draw Tarot Cards",
+      horoscopeLink: "Daily Horoscope",
       footerPrefix: "Explore more:",
       footerHoroscope: "Daily Horoscope",
       footerTarot: "Draw Tarot Cards",
@@ -75,9 +77,10 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "この数字を夢で見ましたか？その意味を発見しましょう",
     },
     cta: {
-      heading: "このメッセージをさらに深く知りたいですか？",
-      tarotButton: "タロットカードを引く",
-      horoscopeLink: "または今日の宇宙の流れを確認",
+      heading: "このメッセージをさらに深く探る",
+      description: "エンジェルナンバーは導きが必要なときに現れることがあります。このメッセージをより深く探りたい場合は：",
+      tarotLink: "タロットカードを引く",
+      horoscopeLink: "今日の運勢",
       footerPrefix: "もっと知りたいですか？",
       footerHoroscope: "今日の運勢",
       footerTarot: "タロットを引く",
@@ -105,9 +108,10 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "이 숫자를 꿈에서 봤나요? 그 의미를 알아보세요",
     },
     cta: {
-      heading: "이 메시지의 흐름을 더 알고 싶다면?",
-      tarotButton: "타로 카드 뽑기",
-      horoscopeLink: "또는 오늘의 우주 흐름 확인",
+      heading: "이 메시지를 더 깊이 탐구하기",
+      description: "엔젤넘버는 우리에게 안내가 필요할 때 나타나기도 합니다. 이 메시지를 더 깊이 탐구하고 싶다면：",
+      tarotLink: "타로 카드 뽑기",
+      horoscopeLink: "오늘의 운세",
       footerPrefix: "더 확인하고 싶다면",
       footerHoroscope: "오늘의 운세",
       footerTarot: "타로 카드 뽑기",
@@ -135,9 +139,10 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "¿Viste este número en un sueño? Descubre su significado",
     },
     cta: {
-      heading: "¿Quieres explorar más este mensaje?",
-      tarotButton: "Saca Cartas del Tarot",
-      horoscopeLink: "o consulta el flujo cósmico de hoy",
+      heading: "Explora este mensaje más a fondo",
+      description: "Los números de ángeles a menudo aparecen cuando necesitamos orientación. Si deseas explorar este mensaje más profundamente:",
+      tarotLink: "Saca Cartas del Tarot",
+      horoscopeLink: "Horóscopo de Hoy",
       footerPrefix: "¿Quieres explorar más?",
       footerHoroscope: "Horóscopo de Hoy",
       footerTarot: "Sacar Cartas del Tarot",
@@ -165,9 +170,10 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "在夢中看到這個數字？發現它的含義",
     },
     cta: {
-      heading: "想深入了解這個訊息的流向嗎？",
-      tarotButton: "抽塔羅牌",
-      horoscopeLink: "或查看今日宇宙流向",
+      heading: "深入探索這個訊息",
+      description: "天使數字常常在我們需要指引時出現。如果你想更深入地探索這個訊息：",
+      tarotLink: "抽塔羅牌",
+      horoscopeLink: "今日運勢",
       footerPrefix: "想了解更多嗎？",
       footerHoroscope: "今日運勢",
       footerTarot: "抽塔羅牌",
@@ -195,9 +201,10 @@ const dictionaries: Record<Locale, Dictionary> = {
       dreamCtaDesc: "Haben Sie diese Zahl im Traum gesehen? Entdecken Sie ihre Bedeutung",
     },
     cta: {
-      heading: "Möchten Sie diese Botschaft weiter erkunden?",
-      tarotButton: "Tarotkarten ziehen",
-      horoscopeLink: "oder den kosmischen Fluss von heute sehen",
+      heading: "Erkunde diese Botschaft weiter",
+      description: "Engelzahlen erscheinen oft, wenn wir Führung brauchen. Wenn du diese Botschaft tiefer erkunden möchtest:",
+      tarotLink: "Tarotkarten ziehen",
+      horoscopeLink: "Tageshoroskop",
       footerPrefix: "Mehr erfahren?",
       footerHoroscope: "Tageshoroskop",
       footerTarot: "Tarotkarten ziehen",

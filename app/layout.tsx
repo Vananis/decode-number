@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-NKLT6GH13Z"
@@ -51,6 +51,6 @@ export default function RootLayout({
       <body className={`${inter.variable} ${cinzel.variable} font-sans antialiased`}>
         {children}
       </body>
-    </>
+    </html>
   );
 }

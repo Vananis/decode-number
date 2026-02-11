@@ -6,9 +6,5 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  return (
-    <html lang={locale} className="light" style={{ colorScheme: "light" }} suppressHydrationWarning>
-      {children}
-    </html>
-  )
+  return children
 }

@@ -9,24 +9,28 @@ export default function CrossSiteCTA({ locale }: Props) {
   const dict = getDictionary(locale);
 
   return (
-    <div className="my-12 py-8 px-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-100">
-      <p className="text-lg text-indigo-900 font-medium mb-4">
-        🔮 {dict.cta.heading}
+    <blockquote className="border-l-4 border-indigo-400 pl-4 text-gray-600 bg-indigo-50 py-2 my-6">
+      <p className="font-semibold text-gray-800 mb-2">
+        {dict.cta.heading}
       </p>
-      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+      <p className="mb-2">
+        {dict.cta.description}
+      </p>
+      <p>
         <a
           href={`https://read-tarot.com/${locale}/draw`}
-          className="inline-flex items-center justify-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+          className="text-indigo-600 hover:text-indigo-800"
         >
-          {dict.cta.tarotButton}
+          {dict.cta.tarotLink} →
         </a>
+        <span className="mx-3 text-gray-400">|</span>
         <a
           href={`https://read-star.com/${locale}/horoscope`}
-          className="text-indigo-600 hover:text-indigo-800 text-sm"
+          className="text-indigo-600 hover:text-indigo-800"
         >
           {dict.cta.horoscopeLink} →
         </a>
-      </div>
-    </div>
+      </p>
+    </blockquote>
   );
 }
