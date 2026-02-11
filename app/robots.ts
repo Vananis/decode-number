@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["*/about", "*/contact", "*/privacy", "*/terms"],
     },
     sitemap: "https://www.decode-number.com/sitemap.xml",
   }
