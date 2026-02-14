@@ -16,7 +16,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.decode-number.com"),
+  metadataBase: new URL("https://decode-number.com"),
   title: "Decode Number - Angel Number Meanings",
   description: "Discover the meaning behind angel numbers. Explore 111, 222, 333 and more with our comprehensive guide to numerology and spiritual insights.",
   keywords: ["angel numbers", "numerology", "111 meaning", "222 meaning", "333 meaning", "spiritual numbers"],

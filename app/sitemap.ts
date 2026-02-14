@@ -10,7 +10,7 @@ const locales: Locale[] = ["en", "es", "ja", "ko", "zh-hant", "de"];
 const contentTypes: ContentType[] = ["number", "birth-flower", "birth-stone", "zodiac"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.decode-number.com";
+  const baseUrl = "https://decode-number.com";
   
   const homePages = locales.map((locale) => ({
     url: `${baseUrl}/${locale}`,
